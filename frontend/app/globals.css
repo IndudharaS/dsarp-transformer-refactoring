@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f5f7fa;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: #172033;
+  background:
+    linear-gradient(rgba(23, 32, 51, 0.025) 1px, transparent 1px),
+    #f5f7fa;
+  background-size: 100% 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  color: #172033;
+  background: #d5f3f1;
+}

@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+pydantic
+pymongo
+motor
+python-dotenv
+openpyxl
+jinja2
+openai
