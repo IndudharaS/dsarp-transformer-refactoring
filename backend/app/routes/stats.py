@@ -1,3 +1,5 @@
+"""Routes that aggregate statistics for analysis runs and recommendation outputs."""
+
 from collections import Counter, defaultdict
 from typing import Any
 
@@ -13,6 +15,7 @@ router = APIRouter(prefix="/api", tags=["stats"])
 def average_severity_by_type(
     recommendations: list[dict[str, Any]],
 ) -> dict[str, float]:
+    """Compute average severity values grouped by smell type."""
     severities: dict[str, list[float]] = defaultdict(list)
     for recommendation in recommendations:
         severities[str(recommendation["smellType"])].append(
@@ -26,6 +29,7 @@ def average_severity_by_type(
 
 @router.get("/stats/{run_id}")
 async def get_stats(run_id: str) -> dict:
+    """Return summary statistics for a specific analysis run."""
     try:
         db = get_database()
         run = await db.analysis_runs.find_one({"runId": run_id}, {"_id": 0})
@@ -40,6 +44,8 @@ async def get_stats(run_id: str) -> dict:
             .sort("rankPosition", 1)
             .to_list(length=None)
         )
+
+        # Count the number of smells that were processed for the run.
         total_smells = await db.smells.count_documents({"runId": run_id})
     except PyMongoError as error:
         raise HTTPException(

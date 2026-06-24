@@ -1,3 +1,10 @@
+"""Upload routes and helper utilities for the DSARP backend.
+
+This module handles CSV file uploads for smell characteristics, smell affects,
+and component metrics. It validates uploaded data, stores metadata in MongoDB,
+and exposes endpoints for querying upload runs.
+"""
+
 from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
@@ -19,19 +26,23 @@ FIXED_FILENAMES = {
     "smellAffects": "smell-affects.csv",
     "componentMetrics": "component-metrics.csv",
 }
+
 SELECTED_SMELLS = ["godComponent", "unstableDep", "cyclicDep"]
 
 
 def utc_timestamp() -> str:
+    """Return the current UTC timestamp in ISO format."""
     return datetime.now(timezone.utc).isoformat()
 
 
 def generate_run_id() -> str:
+    """Generate a unique run identifier using timestamp and a random suffix."""
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     return f"{timestamp}-{uuid4().hex[:8]}"
 
 
 async def save_upload(upload_file: UploadFile, destination: Path) -> None:
+    """Persist an uploaded file to the configured destination path."""
     try:
         with destination.open("wb") as output:
             while chunk := await upload_file.read(1024 * 1024):
@@ -41,6 +52,7 @@ async def save_upload(upload_file: UploadFile, destination: Path) -> None:
 
 
 def stored_path(run_id: str, filename: str) -> str:
+    """Return the storage path for a file belonging to a given run."""
     return f"{settings.upload_dir}/{run_id}/{filename}"
 
 
@@ -57,6 +69,7 @@ async def upload_files(
     smellAffects: UploadFile = File(...),
     componentMetrics: UploadFile = File(...),
 ) -> UploadResponse:
+    """Accept CSV uploads, validate their schema, and record the upload run."""
     if not projectName.strip() or not systemName.strip() or not version.strip():
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -140,6 +153,7 @@ async def upload_files(
 
 @router.get("/runs/{run_id}")
 async def get_run(run_id: str) -> dict:
+    """Return metadata for a specific upload run, including stored files."""
     try:
         db = get_database()
         run = await db.analysis_runs.find_one({"runId": run_id}, {"_id": 0})
@@ -168,6 +182,7 @@ async def get_run(run_id: str) -> dict:
 
 @router.get("/runs")
 async def list_runs(limit: int = 20) -> dict:
+    """List recent upload runs with optional result limit enforcement."""
     safe_limit = max(1, min(limit, 100))
 
     try:

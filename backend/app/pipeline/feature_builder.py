@@ -1,3 +1,9 @@
+"""Feature builder utilities for transforming analysis data into smell objects.
+
+This module normalizes raw analysis data and builds structured smell entries that
+can be consumed by recommendation and ranking pipelines.
+"""
+
 import ast
 import json
 import math
@@ -10,14 +16,17 @@ import pandas as pd
 from app.pipeline.data_loader import AnalysisData
 
 
+# Smell types that are currently supported by the feature extraction pipeline.
 TARGET_SMELLS = {"godComponent", "unstableDep", "cyclicDep"}
 
 
 def utc_timestamp() -> str:
+    """Return the current UTC timestamp in ISO 8601 format."""
     return datetime.now(timezone.utc).isoformat()
 
 
 def is_null(value: Any) -> bool:
+    """Check whether a value is null or missing for our data processing."""
     if value is None:
         return True
     try:
@@ -28,6 +37,7 @@ def is_null(value: Any) -> bool:
 
 
 def clean_optional_string(value: Any) -> str | None:
+    """Normalize a string value or return None for missing values."""
     if is_null(value):
         return None
     cleaned = str(value).strip()
@@ -35,6 +45,7 @@ def clean_optional_string(value: Any) -> str | None:
 
 
 def numeric_value(value: Any, default: float = 0.0) -> float:
+    """Convert a value to a finite float or return the default."""
     if is_null(value) or (isinstance(value, str) and not value.strip()):
         return default
     try:
@@ -45,10 +56,12 @@ def numeric_value(value: Any, default: float = 0.0) -> float:
 
 
 def integer_value(value: Any) -> int:
+    """Convert a value to an integer using numeric normalization."""
     return int(numeric_value(value))
 
 
 def parse_affected_elements(value: Any) -> list[str]:
+    """Parse saved affected elements metadata into a normalized string list."""
     if is_null(value):
         return []
     if isinstance(value, (list, tuple, set)):
@@ -87,6 +100,7 @@ def parse_affected_elements(value: Any) -> list[str]:
 
 
 def json_serializable(value: Any) -> Any:
+    """Convert pandas / NumPy values into JSON-serializable Python primitives."""
     if is_null(value):
         return None
     if isinstance(value, dict):
@@ -108,6 +122,7 @@ def json_serializable(value: Any) -> Any:
 def _component_metric_index(
     component_metrics: pd.DataFrame,
 ) -> dict[str, list[dict[str, Any]]]:
+    """Build an index of component metrics keyed by component name."""
     index: dict[str, list[dict[str, Any]]] = {}
     for _, row in component_metrics.iterrows():
         name = clean_optional_string(row.get("name"))
@@ -115,13 +130,13 @@ def _component_metric_index(
             continue
         index.setdefault(name, []).append(
             {
-            "name": clean_optional_string(row.get("name")),
-            "fanIn": numeric_value(row.get("FanIn")),
-            "fanOut": numeric_value(row.get("FanOut")),
-            "linesOfCode": numeric_value(row.get("LinesOfCode")),
-            "instabilityMetric": numeric_value(row.get("InstabilityMetric")),
-            "abstractnessMetric": numeric_value(row.get("AbstractnessMetric")),
-            "pageRank": numeric_value(row.get("PageRank")),
+                "name": clean_optional_string(row.get("name")),
+                "fanIn": numeric_value(row.get("FanIn")),
+                "fanOut": numeric_value(row.get("FanOut")),
+                "linesOfCode": numeric_value(row.get("LinesOfCode")),
+                "instabilityMetric": numeric_value(row.get("InstabilityMetric")),
+                "abstractnessMetric": numeric_value(row.get("AbstractnessMetric")),
+                "pageRank": numeric_value(row.get("PageRank")),
             }
         )
     return index
@@ -130,6 +145,7 @@ def _component_metric_index(
 def _dependency_index(
     smell_affects: pd.DataFrame,
 ) -> dict[str, list[dict[str, str]]]:
+    """Build a bidirectional dependency index from smell affects data."""
     index: dict[str, list[dict[str, str]]] = {}
     for _, row in smell_affects.iterrows():
         from_component = clean_optional_string(row.get("from"))
@@ -147,6 +163,7 @@ def _matching_component_metrics(
     affected_elements: list[str],
     metric_index: dict[str, list[dict[str, Any]]],
 ) -> list[dict[str, Any]]:
+    """Return the metrics for all affected elements."""
     return [
         metric
         for element in affected_elements
@@ -158,6 +175,7 @@ def _matching_dependencies(
     affected_elements: list[str],
     dependency_index: dict[str, list[dict[str, str]]],
 ) -> list[dict[str, str]]:
+    """Return unique dependencies for affected elements."""
     dependencies: list[dict[str, str]] = []
     seen: set[tuple[str, str]] = set()
     for element in affected_elements:
@@ -170,6 +188,7 @@ def _matching_dependencies(
 
 
 def _system_column(columns: Iterable[str]) -> str | None:
+    """Find the actual column name for a system column, case-insensitively."""
     lookup = {column.lower(): column for column in columns}
     return lookup.get("system")
 
@@ -178,6 +197,7 @@ def build_smell_objects(
     run: dict[str, Any],
     data: AnalysisData,
 ) -> list[dict[str, Any]]:
+    """Build normalized smell objects from raw analysis data."""
     smells = data.smell_characteristics.copy()
     smells = smells[smells["smellType"].isin(TARGET_SMELLS)]
 

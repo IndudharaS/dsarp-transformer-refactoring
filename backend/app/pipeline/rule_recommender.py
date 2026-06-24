@@ -1,7 +1,14 @@
+"""Rule-based recommendation generation for code smell remediation.
+
+This module maps known smell types to detailed remediation recommendations.
+It provides a single helper to build a recommendation payload from a smell record.
+"""
+
 from copy import deepcopy
 from typing import Any
 
 
+# Static recommendation templates for known smell types.
 RULE_RECOMMENDATIONS: dict[str, dict[str, Any]] = {
     "godComponent": {
         "recommendation": "Extract Component + Split Responsibilities",
@@ -76,10 +83,12 @@ RULE_RECOMMENDATIONS: dict[str, dict[str, Any]] = {
 
 
 def build_rule_recommendation(smell: dict[str, Any]) -> dict[str, Any]:
+    """Build a recommendation payload for the given smell entry."""
     smell_type = smell.get("smellType")
     if smell_type not in RULE_RECOMMENDATIONS:
         raise ValueError(f"No rule recommendation exists for {smell_type}.")
 
     recommendation = deepcopy(RULE_RECOMMENDATIONS[smell_type])
+    # Attach the actual affected components from the smell metadata.
     recommendation["targetComponents"] = list(smell["affectedElements"])
     return recommendation

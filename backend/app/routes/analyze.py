@@ -1,3 +1,9 @@
+"""Route handlers for triggering analysis runs and generating recommendations.
+
+This module validates uploaded analysis files, extracts smell objects, predicts
+recommendation strategies, ranks results, and persists outputs to MongoDB.
+"""
+
 from datetime import datetime, timezone
 from typing import Any
 
@@ -17,6 +23,7 @@ router = APIRouter(prefix="/api", tags=["analyze"])
 
 
 def utc_timestamp() -> str:
+    """Return the current UTC timestamp in ISO 8601 format."""
     return datetime.now(timezone.utc).isoformat()
 
 
@@ -26,6 +33,7 @@ async def update_run_status(
     *,
     error_message: str | None = None,
 ) -> None:
+    """Update the analysis run status record in the database."""
     update: dict[str, Any] = {
         "status": run_status,
         "updatedAt": utc_timestamp(),
@@ -48,6 +56,7 @@ def build_prediction(
     model: str,
     created_at: str,
 ) -> dict[str, Any]:
+    """Build a classifier prediction payload for a smell object."""
     return {
         "runId": run_id,
         "smellId": smell["smellId"],
@@ -63,6 +72,7 @@ def build_recommendation(
     prediction: dict[str, Any],
     created_at: str,
 ) -> dict[str, Any]:
+    """Build a recommendation payload by combining smell data and rule output."""
     rule = build_rule_recommendation(smell)
     return {
         "runId": smell["runId"],
@@ -89,10 +99,12 @@ def build_recommendation(
 
 @router.post("/analyze/{run_id}")
 async def analyze_run(run_id: str) -> dict[str, str | int]:
+    """Process an analysis run and generate ranked recommendations."""
     db = get_database()
     run: dict[str, Any] | None = None
 
     try:
+        # Load the analysis run record and confirm it exists.
         run = await db.analysis_runs.find_one({"runId": run_id}, {"_id": 0})
         if run is None:
             raise HTTPException(
@@ -100,6 +112,7 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
                 detail=f"Analysis run {run_id} was not found.",
             )
 
+        # Load uploaded file metadata for this run.
         uploaded_files = await db.uploaded_files.find_one(
             {"runId": run_id},
             {"_id": 0},
@@ -110,6 +123,7 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
                 detail=f"Uploaded file metadata for run {run_id} was not found.",
             )
 
+        # Validate the uploaded CSV files.
         await update_run_status(run_id, "validating")
         data = load_analysis_data(uploaded_files)
         validation_errors = validate_analysis_data(data)
@@ -122,6 +136,7 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
                 },
             )
 
+        # Process smell objects and generate predictions and recommendations.
         await update_run_status(run_id, "processing")
         smells = build_smell_objects(run, data)
         classifier = get_classifier()
@@ -146,6 +161,7 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
 
         ranked_recommendations = rank_recommendations(recommendations)
 
+        # Persist smell, prediction, and recommendation records.
         await db.smells.delete_many({"runId": run_id})
         await db.classifier_predictions.delete_many({"runId": run_id})
         await db.recommendations.delete_many({"runId": run_id})

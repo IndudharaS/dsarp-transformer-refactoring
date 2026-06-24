@@ -1,6 +1,13 @@
+"""Ranking utilities for smell recommendation prioritization.
+
+This module defines how recommendations are scored and ordered based on
+normalized smell metrics, recommendation quality, and classifier confidence.
+"""
+
 from typing import Any
 
 
+# Weights applied to each metric field when computing the priority score.
 PRIORITY_FIELDS = {
     "severity": 0.35,
     "size": 0.20,
@@ -14,17 +21,21 @@ def _normalized_values(
     records: list[dict[str, Any]],
     field: str,
 ) -> list[float]:
+    """Normalize a numeric field across records into a 0.0-1.0 range."""
     values = [float(record.get(field, 0.0)) for record in records]
     if not values:
         return []
+
     minimum = min(values)
     maximum = max(values)
     if minimum == maximum:
+        # Avoid division by zero when all values are equal.
         return [0.5] * len(values)
     return [(value - minimum) / (maximum - minimum) for value in values]
 
 
 def recommendation_quality_score(confidence: float) -> float:
+    """Compute a fixed quality score for a recommendation based on confidence."""
     score = (
         0.25 * 1.0
         + 0.20 * confidence
@@ -37,6 +48,7 @@ def recommendation_quality_score(confidence: float) -> float:
 
 
 def rank_level(score: float) -> str:
+    """Convert a numeric ranking score into a labeled severity level."""
     if score >= 0.80:
         return "Critical"
     if score >= 0.60:
@@ -49,6 +61,7 @@ def rank_level(score: float) -> str:
 def rank_recommendations(
     recommendations: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
+    """Rank recommendations by combined metric, quality, and classifier confidence."""
     normalized_by_field = {
         field: _normalized_values(recommendations, field)
         for field in PRIORITY_FIELDS
@@ -67,11 +80,13 @@ def rank_recommendations(
             + 0.30 * quality_score
             + 0.20 * float(recommendation["classifierConfidence"])
         )
+
         recommendation["smellPriorityScore"] = round(priority_score, 6)
         recommendation["recommendationQualityScore"] = quality_score
         recommendation["finalRankingScore"] = round(final_score, 6)
         recommendation["rankLevel"] = rank_level(final_score)
 
+    # Sort recommendations in descending order by final ranking score.
     recommendations.sort(
         key=lambda item: item["finalRankingScore"],
         reverse=True,

@@ -1,3 +1,10 @@
+"""MongoDB setup and utility helpers.
+
+This module is responsible for configuring the MongoDB connection, ensuring required
+collections and indexes exist, seeding known software system metadata, and exposing
+database helper functions used by the application.
+"""
+
 from typing import Any, Dict, List
 
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
@@ -6,6 +13,7 @@ from pymongo.errors import PyMongoError
 from app.config import get_settings
 
 
+# Collections that should exist in the database for application operations.
 COLLECTIONS: List[str] = [
     "software_systems",
     "analysis_runs",
@@ -19,6 +27,8 @@ COLLECTIONS: List[str] = [
     "reports",
 ]
 
+
+# Default supported software systems seeded into the database.
 SUPPORTED_SOFTWARE_SYSTEMS: List[Dict[str, Any]] = [
     {
         "name": "Tika",
@@ -48,29 +58,45 @@ SUPPORTED_SOFTWARE_SYSTEMS: List[Dict[str, Any]] = [
 ]
 
 
+# Load application settings from configuration.
 settings = get_settings()
+
+# Create the MongoDB client with a short server selection timeout.
 client: AsyncIOMotorClient = AsyncIOMotorClient(
     settings.mongo_uri,
     serverSelectionTimeoutMS=3000,
 )
+
+# Reference the configured database for application use.
 database: AsyncIOMotorDatabase = client[settings.mongo_db]
 
 
 def get_database() -> AsyncIOMotorDatabase:
+    """Return the shared MongoDB database instance."""
+    # The global database object is created once and reused by all callers.
     return database
 
 
 async def ping_database() -> bool:
+    """Ping the MongoDB server to confirm the connection is healthy."""
+    # Use the MongoDB ping command to validate connectivity and server availability.
     await database.command("ping")
     return True
 
 
 async def initialize_database() -> None:
+    """Initialize the database schema and seed required data.
+
+    This creates any missing collections, ensures the expected indexes exist,
+    and upserts the supported software systems into the software_systems collection.
+    """
     existing_collections = await database.list_collection_names()
     for collection_name in COLLECTIONS:
         if collection_name not in existing_collections:
+            # Create any collection that does not already exist.
             await database.create_collection(collection_name)
 
+    # Create required indexes for unique constraints and query performance.
     await database.analysis_runs.create_index("runId", unique=True)
     await database.uploaded_files.create_index("runId", unique=True)
     await database.software_systems.create_index("name", unique=True)
@@ -87,6 +113,7 @@ async def initialize_database() -> None:
         [("runId", 1), ("rankPosition", 1)]
     )
 
+    # Seed the supported software systems data.
     for system in SUPPORTED_SOFTWARE_SYSTEMS:
         await database.software_systems.update_one(
             {"name": system["name"]},
@@ -96,8 +123,12 @@ async def initialize_database() -> None:
 
 
 async def close_database() -> None:
+    """Close the MongoDB client connection."""
+    # Close the underlying client connection when the application shuts down.
     client.close()
 
 
 def mongo_error_message(error: PyMongoError) -> str:
+    """Format a readable message for MongoDB-related exceptions."""
+    # Convert a PyMongo exception into a simpler message for logging or responses.
     return f"MongoDB operation failed: {error.__class__.__name__}"
