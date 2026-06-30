@@ -5,6 +5,7 @@ import {
   ArrowRight,
   CheckCircle2,
   CircleAlert,
+  Download,
   FileText,
   LoaderCircle,
   Play,
@@ -12,7 +13,7 @@ import {
 } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
-import { apiFetch, AnalyzeResponse, RunRecord } from "@/lib/api";
+import { API_URL, apiFetch, AnalyzeResponse, RunRecord } from "@/lib/api";
 import { RunTabs } from "@/components/run-tabs";
 import { StatusBadge } from "@/components/status-badge";
 
@@ -132,9 +133,10 @@ export function RunWorkspace() {
       </div>
 
       {run.status === "completed" && (
-        <section className="grid gap-3 sm:grid-cols-2">
+        <section className="grid gap-3 sm:grid-cols-3">
           <ActionLink href={`/runs/${runId}/recommendations`} label="View ranked recommendations" />
           <ActionLink href={`/runs/${runId}/stats`} label="View analysis statistics" />
+          <a href={`${API_URL}/api/training-data/${runId}/export`} className="flex items-center justify-between rounded-lg border border-line bg-white p-4 text-sm font-bold text-ink shadow-panel hover:border-teal-500 hover:text-teal-700"><span className="flex items-center gap-2"><Download size={17} className="text-teal-600" />Download training CSV</span><ArrowRight size={17} /></a>
         </section>
       )}
     </div>

@@ -248,3 +248,52 @@ def build_smell_objects(
             }
         )
     return json_serializable(smell_objects)
+
+
+def build_training_text(smell: dict[str, Any]) -> str:
+    """Create deterministic natural-language input for Stage 3 classifiers."""
+    affected = ", ".join(smell.get("affectedElements", [])) or "none"
+    dependencies = "; ".join(
+        f"{edge['from']} -> {edge['to']}"
+        for edge in smell.get("dependencies", [])[:20]
+    ) or "none"
+    metrics = "; ".join(
+        (
+            f"{metric.get('name')} (fan-in {metric.get('fanIn', 0)}, "
+            f"fan-out {metric.get('fanOut', 0)}, LOC {metric.get('linesOfCode', 0)}, "
+            f"instability {metric.get('instabilityMetric', 0)}, "
+            f"abstractness {metric.get('abstractnessMetric', 0)}, "
+            f"PageRank {metric.get('pageRank', 0)})"
+        )
+        for metric in smell.get("componentMetrics", [])[:20]
+    ) or "none"
+    return (
+        f"System: {smell.get('system')}. "
+        f"Architectural smell: {smell.get('smellType')}. "
+        f"Affected components: {affected}. "
+        f"Severity: {smell.get('severity', 0)}; size: {smell.get('size', 0)}; "
+        f"strength: {smell.get('strength', 0)}; "
+        f"instability gap: {smell.get('instabilityGap', 0)}; "
+        f"number of edges: {smell.get('numberOfEdges', 0)}. "
+        f"Shape: {smell.get('shape') or 'unknown'}; "
+        f"central component: {smell.get('centralComponent') or 'none'}. "
+        f"Dependencies: {dependencies}. Component metrics: {metrics}."
+    )
+
+
+def build_training_feature(
+    smell: dict[str, Any],
+    label: str,
+    created_at: str,
+) -> dict[str, Any]:
+    """Build a reusable pseudo-labelled Stage 3 training record."""
+    return {
+        "runId": smell["runId"],
+        "smellId": smell["smellId"],
+        "system": smell["system"],
+        "smellType": smell["smellType"],
+        "text": build_training_text(smell),
+        "label": label,
+        "labelSource": "rule-classifier-baseline",
+        "createdAt": created_at,
+    }

@@ -13,7 +13,7 @@ from pymongo.errors import PyMongoError
 from app.db.mongo import get_database, mongo_error_message
 from app.pipeline.classifier_client import get_classifier
 from app.pipeline.data_loader import load_analysis_data
-from app.pipeline.feature_builder import build_smell_objects
+from app.pipeline.feature_builder import build_smell_objects, build_training_feature
 from app.pipeline.ranker import rank_recommendations
 from app.pipeline.rule_recommender import build_rule_recommendation
 from app.pipeline.validator import validate_analysis_data
@@ -87,6 +87,7 @@ def build_recommendation(
         "instabilityGap": smell["instabilityGap"],
         "numberOfEdges": smell["numberOfEdges"],
         "predictedStrategy": prediction["predictedStrategy"],
+        "category": prediction["predictedStrategy"],
         "classifierConfidence": prediction["classifierConfidence"],
         "classifierModel": prediction["modelUsed"],
         **rule,
@@ -127,13 +128,10 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
         await update_run_status(run_id, "validating")
         data = load_analysis_data(uploaded_files)
         validation_errors = validate_analysis_data(data)
-        if validation_errors:
+        if not validation_errors.is_valid:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail={
-                    "message": "Uploaded CSV files are missing required columns.",
-                    "missingColumns": validation_errors,
-                },
+                detail=validation_errors.api_detail(),
             )
 
         # Process smell objects and generate predictions and recommendations.
@@ -143,6 +141,7 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
         created_at = utc_timestamp()
         predictions: list[dict[str, Any]] = []
         recommendations: list[dict[str, Any]] = []
+        training_features: list[dict[str, Any]] = []
 
         for smell in smells:
             result = classifier.predict(str(smell["smellType"]))
@@ -155,6 +154,9 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
                 created_at,
             )
             predictions.append(prediction)
+            training_features.append(
+                build_training_feature(smell, result.strategy, created_at)
+            )
             recommendations.append(
                 build_recommendation(smell, prediction, created_at)
             )
@@ -165,6 +167,7 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
         await db.smells.delete_many({"runId": run_id})
         await db.classifier_predictions.delete_many({"runId": run_id})
         await db.recommendations.delete_many({"runId": run_id})
+        await db.training_features.delete_many({"runId": run_id})
 
         if smells:
             await db.smells.insert_many(smells)
@@ -172,6 +175,8 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
             await db.classifier_predictions.insert_many(predictions)
         if ranked_recommendations:
             await db.recommendations.insert_many(ranked_recommendations)
+        if training_features:
+            await db.training_features.insert_many(training_features)
 
         await db.analysis_runs.update_one(
             {"runId": run_id},

@@ -1,0 +1,13 @@
+text,label
+large example 1,LargeClass
+large example 2,LargeClass
+large example 3,LargeClass
+large example 4,LargeClass
+large example 5,LargeClass
+large example 6,LargeClass
+large example 7,LargeClass
+large example 8,LargeClass
+small example 1,SmallClass
+small example 2,SmallClass
+large example 1,LargeClass
+,MissingTextClass

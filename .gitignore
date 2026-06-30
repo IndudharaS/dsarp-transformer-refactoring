@@ -16,8 +16,14 @@ frontend/.env.local
 frontend/node_modules/
 frontend/.next/
 
+# Generated transformer model artifacts (keep locally, not in Git)
+saved_transformer_classifier/
+saved_transformer_classifier.zip
+backend/app/ml/saved_transformer_classifier/
+
 # Runtime output
 backend/uploads/*
 !backend/uploads/.gitkeep
 backend/reports/*
 !backend/reports/.gitkeep
+!backend/reports/run_ids.example.json

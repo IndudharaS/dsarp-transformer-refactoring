@@ -13,7 +13,7 @@ from pymongo.errors import PyMongoError
 
 from app.config import get_settings
 from app.db.mongo import close_database, initialize_database, ping_database
-from app.routes import analyze, prompts, recommendations, reports, stats, upload
+from app.routes import analyze, prompts, recommendations, reports, results, stats, upload
 
 
 # Load application settings from configuration.
@@ -63,6 +63,7 @@ app.include_router(upload.router)
 app.include_router(analyze.router)
 app.include_router(recommendations.router)
 app.include_router(stats.router)
+app.include_router(results.router)
 app.include_router(prompts.router)
 app.include_router(reports.router)
 

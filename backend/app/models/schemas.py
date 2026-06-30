@@ -45,3 +45,16 @@ class ErrorResponse(BaseModel):
     """Standard error response payload used by API endpoints."""
 
     detail: str
+
+
+class TrainingFeature(BaseModel):
+    """Transformer-ready pseudo-labelled feature produced by Stage 2."""
+
+    runId: str
+    smellId: str
+    system: str
+    smellType: str
+    text: str
+    label: str
+    labelSource: str
+    createdAt: str

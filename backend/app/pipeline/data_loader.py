@@ -85,6 +85,8 @@ def load_analysis_data(uploaded_files: Mapping[str, Any]) -> AnalysisData:
                 keep_default_na=True,
             ),
         )
+    except pd.errors.EmptyDataError as error:
+        raise ValueError("One or more uploaded CSV files are empty.") from error
     except (pd.errors.ParserError, UnicodeDecodeError) as error:
         # Wrap CSV parsing errors in a ValueError with a descriptive message.
         raise ValueError(f"Unable to parse uploaded CSV files: {error}") from error

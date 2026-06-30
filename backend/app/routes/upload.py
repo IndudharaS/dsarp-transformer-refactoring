@@ -7,6 +7,7 @@ and exposes endpoints for querying upload runs.
 
 from datetime import datetime, timezone
 from pathlib import Path
+import shutil
 from uuid import uuid4
 
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile, status
@@ -15,7 +16,11 @@ from pymongo.errors import PyMongoError
 from app.config import get_settings
 from app.db.mongo import get_database, mongo_error_message
 from app.models.schemas import AnalysisRun, UploadResponse, UploadedFilesDocument
-from app.pipeline.validator import validate_csv_columns
+from app.pipeline.validator import (
+    CSVValidationError,
+    validate_csv_file,
+    validate_upload_type,
+)
 
 
 router = APIRouter(prefix="/api", tags=["upload"])
@@ -76,15 +81,27 @@ async def upload_files(
             detail="projectName, systemName, and version are required.",
         )
 
-    run_id = generate_run_id()
-    run_dir = settings.upload_path / run_id
-    run_dir.mkdir(parents=True, exist_ok=False)
-
     uploads = {
         "smellCharacteristics": smellCharacteristics,
         "smellAffects": smellAffects,
         "componentMetrics": componentMetrics,
     }
+    try:
+        for key, upload_file in uploads.items():
+            validate_upload_type(
+                upload_file.filename,
+                upload_file.content_type,
+                key,
+            )
+    except CSVValidationError as error:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=str(error),
+        ) from error
+
+    run_id = generate_run_id()
+    run_dir = settings.upload_path / run_id
+    run_dir.mkdir(parents=True, exist_ok=False)
 
     try:
         for key, upload_file in uploads.items():
@@ -92,7 +109,7 @@ async def upload_files(
 
         validation_errors = {}
         for key, filename in FIXED_FILENAMES.items():
-            missing_columns = validate_csv_columns(run_dir / filename, filename)
+            missing_columns = validate_csv_file(run_dir / filename, filename)
             if missing_columns:
                 validation_errors[filename] = missing_columns
 
@@ -132,13 +149,16 @@ async def upload_files(
         await db.analysis_runs.insert_one(analysis_run.model_dump())
         await db.uploaded_files.insert_one(uploaded_files.model_dump())
     except HTTPException:
+        shutil.rmtree(run_dir, ignore_errors=True)
         raise
-    except ValueError as error:
+    except (CSVValidationError, ValueError) as error:
+        shutil.rmtree(run_dir, ignore_errors=True)
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=f"Invalid CSV file: {error}",
         ) from error
     except PyMongoError as error:
+        shutil.rmtree(run_dir, ignore_errors=True)
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail=mongo_error_message(error),

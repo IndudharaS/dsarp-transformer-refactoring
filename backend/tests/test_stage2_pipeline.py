@@ -5,6 +5,8 @@ formats, building smell objects from raw data, and ranking recommendations.
 """
 
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import pandas as pd
 
@@ -12,9 +14,16 @@ from app.pipeline.classifier_client import RuleBasedClassifier
 from app.pipeline.data_loader import AnalysisData
 from app.pipeline.feature_builder import (
     build_smell_objects,
+    build_training_feature,
     parse_affected_elements,
 )
 from app.pipeline.ranker import rank_level, rank_recommendations
+from app.pipeline.rule_recommender import build_rule_recommendation
+from app.pipeline.validator import (
+    CSVValidationError,
+    validate_csv_file,
+    validate_upload_type,
+)
 
 
 class AffectedElementsTests(unittest.TestCase):
@@ -30,6 +39,38 @@ class AffectedElementsTests(unittest.TestCase):
         )
         self.assertEqual(parse_affected_elements("[A, B, C]"), ["A", "B", "C"])
         self.assertEqual(parse_affected_elements("A"), ["A"])
+
+
+class CSVValidationTests(unittest.TestCase):
+    """Tests for upload type, emptiness, and required-column validation."""
+
+    def test_rejects_non_csv_extension(self) -> None:
+        with self.assertRaisesRegex(CSVValidationError, "must be a .csv"):
+            validate_upload_type("smells.json", "application/json", "smells")
+
+    def test_rejects_empty_and_header_only_files(self) -> None:
+        with TemporaryDirectory() as directory:
+            empty = Path(directory) / "empty.csv"
+            empty.write_bytes(b"")
+            with self.assertRaisesRegex(CSVValidationError, "empty"):
+                validate_csv_file(empty, "smell-characteristics.csv")
+
+            header_only = Path(directory) / "headers.csv"
+            header_only.write_text(
+                "smellType,Severity,Size,Strength,InstabilityGap,"
+                "AffectedElements,NumberOfEdges\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(CSVValidationError, "no data rows"):
+                validate_csv_file(header_only, "smell-characteristics.csv")
+
+    def test_reports_missing_columns(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "smells.csv"
+            path.write_text("smellType,Severity\ncyclicDep,4.2\n", encoding="utf-8")
+            missing = validate_csv_file(path, "smell-characteristics.csv")
+            self.assertIn("AffectedElements", missing)
+            self.assertIn("NumberOfEdges", missing)
 
 
 class FeatureBuilderTests(unittest.TestCase):
@@ -92,6 +133,15 @@ class FeatureBuilderTests(unittest.TestCase):
         self.assertEqual(smells[0]["dependencies"], [{"from": "A", "to": "B"}])
         self.assertEqual(smells[0]["componentMetrics"][0]["fanIn"], 12.0)
 
+        feature = build_training_feature(
+            smells[0],
+            "ExtractSharedComponent",
+            "2026-01-01T00:00:00+00:00",
+        )
+        self.assertEqual(feature["label"], "ExtractSharedComponent")
+        self.assertIn("Architectural smell: cyclicDep", feature["text"])
+        self.assertIn("Affected components: A, B", feature["text"])
+
 
 class ClassifierAndRankingTests(unittest.TestCase):
     """Tests for classifier output and recommendation ranking behavior."""
@@ -137,6 +187,33 @@ class ClassifierAndRankingTests(unittest.TestCase):
         self.assertEqual(rank_level(0.60), "High")
         self.assertEqual(rank_level(0.40), "Medium")
         self.assertEqual(rank_level(0.39), "Low")
+
+    def test_rule_recommendations_are_structured(self) -> None:
+        for smell_type in ("godComponent", "unstableDep", "cyclicDep"):
+            result = build_rule_recommendation(
+                {"smellType": smell_type, "affectedElements": ["A"]}
+            )
+            self.assertTrue(result["recommendation"])
+            self.assertTrue(result["reason"])
+            self.assertTrue(result["steps"])
+            self.assertIn(result["risk"], {"Medium", "High"})
+
+    def test_ranking_sorts_descending(self) -> None:
+        base = {
+            "size": 1,
+            "strength": 1,
+            "instabilityGap": 1,
+            "numberOfEdges": 1,
+            "recommendationConfidence": 0.75,
+            "classifierConfidence": 0.80,
+        }
+        ranked = rank_recommendations(
+            [{**base, "severity": 1}, {**base, "severity": 10}]
+        )
+        self.assertGreaterEqual(
+            ranked[0]["finalRankingScore"],
+            ranked[1]["finalRankingScore"],
+        )
 
 
 if __name__ == "__main__":

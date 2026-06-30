@@ -20,6 +20,7 @@ COLLECTIONS: List[str] = [
     "uploaded_files",
     "smells",
     "classifier_predictions",
+    "training_features",
     "prompt_versions",
     "prompt_evaluations",
     "model_outputs",
@@ -102,6 +103,10 @@ async def initialize_database() -> None:
     await database.software_systems.create_index("name", unique=True)
     await database.smells.create_index([("runId", 1), ("smellId", 1)], unique=True)
     await database.classifier_predictions.create_index(
+        [("runId", 1), ("smellId", 1)],
+        unique=True,
+    )
+    await database.training_features.create_index(
         [("runId", 1), ("smellId", 1)],
         unique=True,
     )
