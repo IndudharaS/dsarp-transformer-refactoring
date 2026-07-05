@@ -1,0 +1,153 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "ac9d5e90c72180917d1d006c2e28d31229ad42ee",
+	"url": "https://github.com/apache/camel/commit/ac9d5e90c72180917d1d006c2e28d31229ad42ee",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public setContainer(container CamelContext) : void renamed to public setContext(container CamelContext) : void in class org.apache.camel.pojo.PojoComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setContainer(container CamelContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setContext(container CamelContext) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setContainer(container CamelContext) : void renamed to public setContext(container CamelContext) : void in class org.apache.camel.queue.QueueComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setContainer(container CamelContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setContext(container CamelContext) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setContainer(container CamelContext) : void renamed to public setContext(container CamelContext) : void in class org.apache.camel.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 143,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setContainer(container CamelContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 143,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setContext(container CamelContext) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createIterator(value Object) : Iterator renamed to public iterator(value Object) : Iterator in class org.apache.camel.util.ObjectHelper",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/util/ObjectHelper.java",
+		"startLine": 89,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createIterator(value Object) : Iterator"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/util/ObjectHelper.java",
+		"startLine": 88,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public iterator(value Object) : Iterator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setContainer(container CamelContext) : void renamed to public setContext(context CamelContext) : void in class org.apache.camel.Component",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Component.java",
+		"startLine": 26,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setContainer(container CamelContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Component.java",
+		"startLine": 26,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setContext(context CamelContext) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : CamelContext to context : CamelContext in method public setContext(context CamelContext) : void from class org.apache.camel.Component",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Component.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Component.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "context : CamelContext"
+}]
+}
+]
+}]
+}

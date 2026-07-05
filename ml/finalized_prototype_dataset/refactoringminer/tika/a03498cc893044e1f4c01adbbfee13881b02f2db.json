@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "a03498cc893044e1f4c01adbbfee13881b02f2db",
+	"url": "https://github.com/apache/tika/commit/a03498cc893044e1f4c01adbbfee13881b02f2db",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public extractProperties(input InputStream) : void renamed to public extract(input InputStream) : void in class org.apache.tika.utils.MSExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 53,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extractProperties(input InputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 55,
+		"endLine": 75,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public extract(input InputStream) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public getText() : String from class org.apache.tika.utils.MSExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 75,
+		"endLine": 82,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getText() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getText() : String"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable ris : RereadableInputStream in method public extract(input InputStream) : void from class org.apache.tika.utils.MSExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 4,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 65,
+		"endLine": 66,
+		"startColumn": 25,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "ris : RereadableInputStream"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

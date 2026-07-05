@@ -1,0 +1,312 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "3e6804a397a9045eb296006a7089db13639d7f2d",
+	"url": "https://github.com/apache/camel/commit/3e6804a397a9045eb296006a7089db13639d7f2d",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type Exception in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.EndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 26,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveComponent(container CamelContext, uri String) : Component"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 82,
+		"endColumn": 91,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 92,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public resolveComponent(container CamelContext, uri String) : Component"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type Exception in method public resolveEndpoint(container CamelContext, uri String) : Endpoint<E> from class org.apache.camel.EndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 76,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveEndpoint(container CamelContext, uri String) : Endpoint<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 83,
+		"endColumn": 92,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 93,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public resolveEndpoint(container CamelContext, uri String) : Endpoint<E>"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type Exception in method public resolveEndpoint(container CamelContext, uri String) : Endpoint<E> from class org.apache.camel.impl.DefaultEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveEndpoint(container CamelContext, uri String) : Endpoint<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 83,
+		"endColumn": 92,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public resolveEndpoint(container CamelContext, uri String) : Endpoint<E>"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type Exception in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.impl.DefaultEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveComponent(container CamelContext, uri String) : Component"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 79,
+		"endColumn": 88,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public resolveComponent(container CamelContext, uri String) : Component"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : CamelContext to context : CamelContext in method public JmsComponent(context CamelContext) from class org.apache.camel.component.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 25,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "context : CamelContext"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setContext(container CamelContext) : void from class org.apache.camel.component.jms.JmsComponent to public setContext(context CamelContext) : void from class org.apache.camel.impl.DefaultComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 143,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setContext(container CamelContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultComponent.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setContext(context CamelContext) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : CamelContext to context : CamelContext in method public setContext(context CamelContext) : void from class org.apache.camel.impl.DefaultComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultComponent.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "context : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultComponent.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.camel.impl.DefaultComponent from classes [org.apache.camel.component.jms.JmsComponent]",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 32,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 33,
+		"endLine": 161,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.component.jms.JmsComponent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultComponent.java",
+		"startLine": 24,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.camel.impl.DefaultComponent"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getContainer() : CamelContext from class org.apache.camel.component.jms.JmsComponent to public getContext() : CamelContext from class org.apache.camel.impl.DefaultComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 139,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultComponent.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getContext() : CamelContext"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private container : CamelContext renamed to private context : CamelContext and moved from class org.apache.camel.component.jms.JmsComponent to class org.apache.camel.impl.DefaultComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private container : CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultComponent.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private context : CamelContext"
+}]
+}
+]
+}]
+}

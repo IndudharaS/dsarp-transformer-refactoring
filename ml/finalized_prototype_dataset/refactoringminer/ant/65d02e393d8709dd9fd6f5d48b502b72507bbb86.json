@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "65d02e393d8709dd9fd6f5d48b502b72507bbb86",
+	"url": "https://github.com/apache/ant/commit/65d02e393d8709dd9fd6f5d48b502b72507bbb86",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type tstamp : StringBuffer to tstamp : SimpleDateFormat in method public execute() : void from class org.apache.tools.ant.taskdefs.Tstamp",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tstamp : StringBuffer"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 6,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 30,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "tstamp : SimpleDateFormat"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

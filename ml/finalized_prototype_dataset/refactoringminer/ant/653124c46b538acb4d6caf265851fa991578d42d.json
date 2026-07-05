@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "653124c46b538acb4d6caf265851fa991578d42d",
+	"url": "https://github.com/apache/ant/commit/653124c46b538acb4d6caf265851fa991578d42d",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public setClass(classname String) : void renamed to public setClassname(classname String) : void in class org.apache.tools.ant.taskdefs.Available",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Available.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setClass(classname String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Available.java",
+		"startLine": 85,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setClassname(classname String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setClass(s String) : void renamed to public setClassname(s String) : void in class org.apache.tools.ant.taskdefs.Java",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Java.java",
+		"startLine": 120,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setClass(s String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Java.java",
+		"startLine": 130,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setClassname(s String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setClass(classname String) : void renamed to public setClassname(classname String) : void in class org.apache.tools.ant.taskdefs.Rmic",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Rmic.java",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setClass(classname String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Rmic.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setClassname(classname String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setClass(v String) : void renamed to public setClassname(v String) : void in class org.apache.tools.ant.taskdefs.Taskdef",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Taskdef.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setClass(v String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Taskdef.java",
+		"startLine": 99,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setClassname(v String) : void"
+}]
+}
+]
+}]
+}

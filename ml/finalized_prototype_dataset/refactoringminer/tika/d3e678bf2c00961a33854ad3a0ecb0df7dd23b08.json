@@ -1,0 +1,186 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "d3e678bf2c00961a33854ad3a0ecb0df7dd23b08",
+	"url": "https://github.com/apache/tika/commit/d3e678bf2c00961a33854ad3a0ecb0df7dd23b08",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable ls : List in method public parse(is InputStream) : org.jdom.Document from class org.apache.tika.parser.opendocument.OpenOfficeParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/opendocument/OpenOfficeParser.java",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/opendocument/OpenOfficeParser.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 18,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "ls : List"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/opendocument/OpenOfficeParser.java",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public concatOccurance(xmlDoc Object, xpath String, concatSep String) : String renamed to public concatOccurrence(xmlDoc Object, xpath String, concatSep String) : String in class org.apache.tika.parser.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 66,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public concatOccurance(xmlDoc Object, xpath String, concatSep String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 66,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public concatOccurrence(xmlDoc Object, xpath String, concatSep String) : String"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(ls.size() == j) to if(ls.size() != j) in method public concatOccurrence(xmlDoc Object, xpath String, concatSep String) : String from class org.apache.tika.parser.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 106,
+		"endLine": 109,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(ls.size() == j)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 66,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public concatOccurance(xmlDoc Object, xpath String, concatSep String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 103,
+		"endLine": 107,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(ls.size() != j)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 66,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public concatOccurrence(xmlDoc Object, xpath String, concatSep String) : String"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type chaineConcat : StringBuffer to chaineConcat : StringBuilder in method public concatOccurrence(xmlDoc Object, xpath String, concatSep String) : String from class org.apache.tika.parser.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 22,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "chaineConcat : StringBuffer"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 25,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 23,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "chaineConcat : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 25,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/xml/XMLParser.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

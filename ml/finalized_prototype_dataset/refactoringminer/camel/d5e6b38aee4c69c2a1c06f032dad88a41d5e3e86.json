@@ -1,0 +1,207 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86",
+	"url": "https://github.com/apache/camel/commit/d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.camel.seda.SedaEndpoint moved and renamed to org.apache.camel.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 27,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.seda.SedaEndpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 25,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.camel.queue.QueueEndpoint"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.camel.seda.SedaEndpointResolver moved and renamed to org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpointResolver.java",
+		"startLine": 24,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.seda.SedaEndpointResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 25,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.camel.queue.QueueEndpointResolver"
+}]
+},
+{
+	"type": "Rename Package",
+	"description": "Rename Package org.apache.camel.seda to org.apache.camel.queue",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 27,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.seda.SedaEndpoint"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpointResolver.java",
+		"startLine": 24,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.seda.SedaEndpointResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 25,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.queue.QueueEndpoint"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 25,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.queue.QueueEndpointResolver"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type queue : Queue to queue : Queue<E> in class org.apache.camel.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 19,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "queue : Queue"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 22,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "queue : Queue<E>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type queue : Queue to queue : Queue<E> in method public QueueEndpoint(uri String, container CamelContainer, queue Queue<E>) from class org.apache.camel.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 63,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "queue : Queue"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 64,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "queue : Queue<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Queue to Queue<E> in method public getQueue() : Queue<E> from class org.apache.camel.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 12,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Queue"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/seda/SedaEndpoint.java",
+		"startLine": 53,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getQueue() : Queue"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Queue<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getQueue() : Queue<E>"
+}]
+}
+]
+}]
+}

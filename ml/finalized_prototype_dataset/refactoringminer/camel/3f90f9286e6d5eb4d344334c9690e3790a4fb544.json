@@ -1,0 +1,597 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "3f90f9286e6d5eb4d344334c9690e3790a4fb544",
+	"url": "https://github.com/apache/camel/commit/3f90f9286e6d5eb4d344334c9690e3790a4fb544",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.PojoComponent moved to org.apache.camel.component.pojo.PojoComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 24,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.PojoComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/PojoComponent.java",
+		"startLine": 24,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.PojoComponent"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.PojoEndpoint moved to org.apache.camel.component.pojo.PojoEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpoint.java",
+		"startLine": 27,
+		"endLine": 103,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.PojoEndpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/PojoEndpoint.java",
+		"startLine": 27,
+		"endLine": 103,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.PojoEndpoint"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.PojoEndpointResolver moved to org.apache.camel.component.pojo.PojoEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 24,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.PojoEndpointResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/PojoEndpointResolver.java",
+		"startLine": 24,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.PojoEndpointResolver"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.PojoExchange moved to org.apache.camel.component.pojo.PojoExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoExchange.java",
+		"startLine": 23,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.PojoExchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/PojoExchange.java",
+		"startLine": 23,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.PojoExchange"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.PojoInvocation moved to org.apache.camel.component.pojo.PojoInvocation",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoInvocation.java",
+		"startLine": 5,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.PojoInvocation"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/PojoInvocation.java",
+		"startLine": 5,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.PojoInvocation"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.queue.QueueComponent moved to org.apache.camel.component.queue.QueueComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 26,
+		"endLine": 60,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.queue.QueueComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/queue/QueueComponent.java",
+		"startLine": 26,
+		"endLine": 60,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.queue.QueueComponent"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.queue.QueueEndpoint moved to org.apache.camel.component.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 30,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.queue.QueueEndpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/queue/QueueEndpoint.java",
+		"startLine": 30,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.queue.QueueEndpoint"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.queue.QueueEndpointResolver moved to org.apache.camel.component.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 29,
+		"endLine": 93,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.queue.QueueEndpointResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/queue/QueueEndpointResolver.java",
+		"startLine": 29,
+		"endLine": 93,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.queue.QueueEndpointResolver"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.ISay moved to org.apache.camel.component.pojo.ISay",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/ISay.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.ISay"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/pojo/ISay.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.ISay"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.pojo.SayService moved to org.apache.camel.component.pojo.SayService",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/SayService.java",
+		"startLine": 19,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.pojo.SayService"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/pojo/SayService.java",
+		"startLine": 19,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.pojo.SayService"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.Builder moved to org.apache.camel.component.jms.Builder",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/Builder.java",
+		"startLine": 19,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.Builder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/Builder.java",
+		"startLine": 19,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.Builder"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.DefaultJmsExchange moved to org.apache.camel.component.jms.DefaultJmsExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 31,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.DefaultJmsExchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsExchange.java",
+		"startLine": 27,
+		"endLine": 80,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.DefaultJmsExchange"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.DefaultJmsMessage moved to org.apache.camel.component.jms.DefaultJmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsMessage.java",
+		"startLine": 25,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.DefaultJmsMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 25,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.DefaultJmsMessage"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.JmsComponent moved to org.apache.camel.component.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 32,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.JmsComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsComponent.java",
+		"startLine": 32,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsComponent"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.JmsEndpoint moved to org.apache.camel.component.jms.JmsEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 33,
+		"endLine": 104,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.JmsEndpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsEndpoint.java",
+		"startLine": 33,
+		"endLine": 104,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsEndpoint"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.JmsEndpointResolver moved to org.apache.camel.component.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 29,
+		"endLine": 89,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.JmsEndpointResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsEndpointResolver.java",
+		"startLine": 29,
+		"endLine": 89,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsEndpointResolver"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.JmsExchange moved to org.apache.camel.component.jms.JmsExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsExchange.java",
+		"startLine": 25,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.JmsExchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsExchange.java",
+		"startLine": 25,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsExchange"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.JmsHeaders moved to org.apache.camel.component.jms.JmsHeaders",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsHeaders.java",
+		"startLine": 30,
+		"endLine": 106,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.JmsHeaders"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsHeaders.java",
+		"startLine": 29,
+		"endLine": 105,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsHeaders"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.JmsMessage moved to org.apache.camel.component.jms.JmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsMessage.java",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.JmsMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.JmsMessage"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.MessageListenerProcessor moved to org.apache.camel.component.jms.MessageListenerProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/MessageListenerProcessor.java",
+		"startLine": 27,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.MessageListenerProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/MessageListenerProcessor.java",
+		"startLine": 26,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.MessageListenerProcessor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.MessagePropertyAcessException moved to org.apache.camel.component.jms.MessagePropertyAcessException",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/MessagePropertyAcessException.java",
+		"startLine": 21,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.MessagePropertyAcessException"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/MessagePropertyAcessException.java",
+		"startLine": 21,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.MessagePropertyAcessException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.MessagePropertyNamesAcessException moved to org.apache.camel.component.jms.MessagePropertyNamesAcessException",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/MessagePropertyNamesAcessException.java",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.MessagePropertyNamesAcessException"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/MessagePropertyNamesAcessException.java",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.MessagePropertyNamesAcessException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.jms.RuntimeJmsException moved to org.apache.camel.component.jms.RuntimeJmsException",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/RuntimeJmsException.java",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.jms.RuntimeJmsException"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/RuntimeJmsException.java",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.component.jms.RuntimeJmsException"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type activation : org.apache.camel.queue.QueueEndpoint.Activation to activation : org.apache.camel.component.queue.QueueEndpoint.Activation in class org.apache.camel.component.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 58,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "activation : QueueEndpoint.Activation"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/queue/QueueEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 68,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "activation : QueueEndpoint.Activation"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder camel-jms/src/test/java/org/apache/camel to camel-jms/src/test/java/org/apache/camel/component",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder camel-core/src/test/java/org/apache/camel to camel-core/src/test/java/org/apache/camel/component",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+}]
+}

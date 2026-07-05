@@ -1,0 +1,626 @@
+repository,commit,architecture_smell,refactoring_type,rank
+tika,2b86daf8815f3c8d974f887e4cc064b9159db595,Hub-like Dependency,Remove Thrown Exception Type,1
+tika,2b86daf8815f3c8d974f887e4cc064b9159db595,Large Component,Remove Thrown Exception Type,1
+tika,2b86daf8815f3c8d974f887e4cc064b9159db595,Excessive Package Coupling,Remove Thrown Exception Type,1
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Cyclic Dependency,Change Attribute Type,1
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Cyclic Dependency,Change Parameter Type,2
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Cyclic Dependency,Change Thrown Exception Type,3
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Cyclic Dependency,Rename Class,4
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Hub-like Dependency,Change Attribute Type,1
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Hub-like Dependency,Change Parameter Type,2
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Hub-like Dependency,Change Thrown Exception Type,3
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Hub-like Dependency,Rename Class,4
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Large Component,Change Attribute Type,1
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Large Component,Change Parameter Type,2
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Large Component,Change Thrown Exception Type,3
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Large Component,Rename Class,4
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Excessive Package Coupling,Change Attribute Type,1
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Excessive Package Coupling,Change Parameter Type,2
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Excessive Package Coupling,Change Thrown Exception Type,3
+tika,f8183f2dffaac516ea48fc3522c302fa4937b26c,Excessive Package Coupling,Rename Class,4
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Cyclic Dependency,Add Attribute Modifier,1
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Cyclic Dependency,Change Attribute Type,2
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Cyclic Dependency,Inline Method,3
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Cyclic Dependency,Rename Attribute,4
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Hub-like Dependency,Add Attribute Modifier,1
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Hub-like Dependency,Change Attribute Type,2
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Hub-like Dependency,Inline Method,3
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Hub-like Dependency,Rename Attribute,4
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Large Component,Add Attribute Modifier,1
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Large Component,Change Attribute Type,2
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Large Component,Inline Method,3
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Large Component,Rename Attribute,4
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Excessive Package Coupling,Add Attribute Modifier,1
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Excessive Package Coupling,Change Attribute Type,2
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Excessive Package Coupling,Inline Method,3
+tika,83cb301f046cf5621e6e71bcd907fef52c491078,Excessive Package Coupling,Rename Attribute,4
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Cyclic Dependency,Change Variable Type,1
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Cyclic Dependency,Extract Variable,2
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Cyclic Dependency,Invert Condition,3
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Cyclic Dependency,Rename Method,4
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Hub-like Dependency,Change Variable Type,1
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Hub-like Dependency,Extract Variable,2
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Hub-like Dependency,Invert Condition,3
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Hub-like Dependency,Rename Method,4
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Large Component,Change Variable Type,1
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Large Component,Extract Variable,2
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Large Component,Invert Condition,3
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Large Component,Rename Method,4
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Excessive Package Coupling,Change Variable Type,1
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Excessive Package Coupling,Extract Variable,2
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Excessive Package Coupling,Invert Condition,3
+tika,d3e678bf2c00961a33854ad3a0ecb0df7dd23b08,Excessive Package Coupling,Rename Method,4
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Cyclic Dependency,Change Variable Type,1
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Cyclic Dependency,Extract Variable,2
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Cyclic Dependency,Rename Method,3
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Cyclic Dependency,Rename Variable,4
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Hub-like Dependency,Change Variable Type,1
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Hub-like Dependency,Extract Variable,2
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Hub-like Dependency,Rename Method,3
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Hub-like Dependency,Rename Variable,4
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Large Component,Change Variable Type,1
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Large Component,Extract Variable,2
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Large Component,Rename Method,3
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Large Component,Rename Variable,4
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Excessive Package Coupling,Change Variable Type,1
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Excessive Package Coupling,Extract Variable,2
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Excessive Package Coupling,Rename Method,3
+tika,7bdb1c8dea70014b3528736755868c526dfcf834,Excessive Package Coupling,Rename Variable,4
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Cyclic Dependency,Change Method Access Modifier,1
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Cyclic Dependency,Extract Variable,2
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Cyclic Dependency,Rename Method,3
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Hub-like Dependency,Change Method Access Modifier,1
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Hub-like Dependency,Extract Variable,2
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Hub-like Dependency,Rename Method,3
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Large Component,Change Method Access Modifier,1
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Large Component,Extract Variable,2
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Large Component,Rename Method,3
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Excessive Package Coupling,Change Method Access Modifier,1
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Excessive Package Coupling,Extract Variable,2
+tika,a03498cc893044e1f4c01adbbfee13881b02f2db,Excessive Package Coupling,Rename Method,3
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Cyclic Dependency,Change Return Type,1
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Cyclic Dependency,Inline Variable,2
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Cyclic Dependency,Remove Parameter,3
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Cyclic Dependency,Rename Variable,4
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Cyclic Dependency,Replace Attribute With Variable,5
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Cyclic Dependency,Split Parameter,6
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Hub-like Dependency,Change Return Type,1
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Hub-like Dependency,Inline Variable,2
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Hub-like Dependency,Remove Parameter,3
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Hub-like Dependency,Rename Variable,4
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Hub-like Dependency,Replace Attribute With Variable,5
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Hub-like Dependency,Split Parameter,6
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Large Component,Change Return Type,1
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Large Component,Inline Variable,2
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Large Component,Remove Parameter,3
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Large Component,Rename Variable,4
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Large Component,Replace Attribute With Variable,5
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Large Component,Split Parameter,6
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Excessive Package Coupling,Change Return Type,1
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Excessive Package Coupling,Inline Variable,2
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Excessive Package Coupling,Remove Parameter,3
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Excessive Package Coupling,Rename Variable,4
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Excessive Package Coupling,Replace Attribute With Variable,5
+tika,62e58ea2e8ccd2ef1a968349408c990914efa6b6,Excessive Package Coupling,Split Parameter,6
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Move Class,1
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Move Method,2
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Change Attribute Access Modifier,3
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Change Attribute Type,4
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Change Class Access Modifier,5
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Change Method Access Modifier,6
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Change Parameter Type,7
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Change Thrown Exception Type,8
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Extract Method,9
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Inline Variable,10
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Move And Rename Class,11
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Remove Attribute Modifier,12
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Remove Parameter Modifier,13
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Rename Attribute,14
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Rename Method,15
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Rename Parameter,16
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Rename Variable,17
+tika,aceff84889da091010bcd893809427428a8b68a6,Cyclic Dependency,Replace Attribute With Variable,18
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Extract Method,1
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Move Class,2
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Move Method,3
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Change Attribute Access Modifier,4
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Change Attribute Type,5
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Change Class Access Modifier,6
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Change Method Access Modifier,7
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Change Parameter Type,8
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Change Thrown Exception Type,9
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Inline Variable,10
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Move And Rename Class,11
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Remove Attribute Modifier,12
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Remove Parameter Modifier,13
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Rename Attribute,14
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Rename Method,15
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Rename Parameter,16
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Rename Variable,17
+tika,aceff84889da091010bcd893809427428a8b68a6,Hub-like Dependency,Replace Attribute With Variable,18
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Extract Method,1
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Move Method,2
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Change Attribute Access Modifier,3
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Change Attribute Type,4
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Change Class Access Modifier,5
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Change Method Access Modifier,6
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Change Parameter Type,7
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Change Thrown Exception Type,8
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Inline Variable,9
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Move And Rename Class,10
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Move Class,11
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Remove Attribute Modifier,12
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Remove Parameter Modifier,13
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Rename Attribute,14
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Rename Method,15
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Rename Parameter,16
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Rename Variable,17
+tika,aceff84889da091010bcd893809427428a8b68a6,Large Component,Replace Attribute With Variable,18
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Move Class,1
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Move Method,2
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Change Attribute Access Modifier,3
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Change Attribute Type,4
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Change Class Access Modifier,5
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Change Method Access Modifier,6
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Change Parameter Type,7
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Change Thrown Exception Type,8
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Extract Method,9
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Inline Variable,10
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Move And Rename Class,11
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Remove Attribute Modifier,12
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Remove Parameter Modifier,13
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Rename Attribute,14
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Rename Method,15
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Rename Parameter,16
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Rename Variable,17
+tika,aceff84889da091010bcd893809427428a8b68a6,Excessive Package Coupling,Replace Attribute With Variable,18
+tika,d064cb2f7ffd58893e05e327144816ddee6842da,Cyclic Dependency,Move Class,1
+tika,d064cb2f7ffd58893e05e327144816ddee6842da,Hub-like Dependency,Move Class,1
+tika,d064cb2f7ffd58893e05e327144816ddee6842da,Large Component,Move Class,1
+tika,d064cb2f7ffd58893e05e327144816ddee6842da,Excessive Package Coupling,Move Class,1
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Cyclic Dependency,Move Class,1
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Cyclic Dependency,Merge Package,2
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Cyclic Dependency,Move And Rename Class,3
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Hub-like Dependency,Move Class,1
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Hub-like Dependency,Merge Package,2
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Hub-like Dependency,Move And Rename Class,3
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Large Component,Merge Package,1
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Large Component,Move And Rename Class,2
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Large Component,Move Class,3
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Excessive Package Coupling,Move Class,1
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Excessive Package Coupling,Merge Package,2
+tika,3fb58b7b5dc6381b8bc717663ae7d3fd517394cd,Excessive Package Coupling,Move And Rename Class,3
+tika,e759bbbc8afcc8d490562eb08c14a10c509adc20,Cyclic Dependency,Rename Class,1
+tika,e759bbbc8afcc8d490562eb08c14a10c509adc20,Hub-like Dependency,Rename Class,1
+tika,e759bbbc8afcc8d490562eb08c14a10c509adc20,Large Component,Rename Class,1
+tika,e759bbbc8afcc8d490562eb08c14a10c509adc20,Excessive Package Coupling,Rename Class,1
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Add Attribute Modifier,1
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Change Attribute Type,2
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Change Parameter Type,3
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Change Variable Type,4
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Inline Variable,5
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Invert Condition,6
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Move And Inline Method,7
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Remove Parameter,8
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Cyclic Dependency,Rename Variable,9
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Add Attribute Modifier,1
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Change Attribute Type,2
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Change Parameter Type,3
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Change Variable Type,4
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Inline Variable,5
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Invert Condition,6
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Move And Inline Method,7
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Remove Parameter,8
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Hub-like Dependency,Rename Variable,9
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Add Attribute Modifier,1
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Change Attribute Type,2
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Change Parameter Type,3
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Change Variable Type,4
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Inline Variable,5
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Invert Condition,6
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Move And Inline Method,7
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Remove Parameter,8
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Large Component,Rename Variable,9
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Add Attribute Modifier,1
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Change Attribute Type,2
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Change Parameter Type,3
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Change Variable Type,4
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Inline Variable,5
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Invert Condition,6
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Move And Inline Method,7
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Remove Parameter,8
+tika,9fce256813d12e7aeef73bfc6ed3896ad414dc24,Excessive Package Coupling,Rename Variable,9
+tika,b0a87ad5afe05da5087209062c229a53921ca3bf,Cyclic Dependency,Rename Method,1
+tika,b0a87ad5afe05da5087209062c229a53921ca3bf,Hub-like Dependency,Rename Method,1
+tika,b0a87ad5afe05da5087209062c229a53921ca3bf,Large Component,Rename Method,1
+tika,b0a87ad5afe05da5087209062c229a53921ca3bf,Excessive Package Coupling,Rename Method,1
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Change Attribute Type,1
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Change Return Type,2
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Change Variable Type,3
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Inline Variable,4
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Rename Attribute,5
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Rename Method,6
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Cyclic Dependency,Rename Variable,7
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Change Attribute Type,1
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Change Return Type,2
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Change Variable Type,3
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Inline Variable,4
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Rename Attribute,5
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Rename Method,6
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Hub-like Dependency,Rename Variable,7
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Change Attribute Type,1
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Change Return Type,2
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Change Variable Type,3
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Inline Variable,4
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Rename Attribute,5
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Rename Method,6
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Large Component,Rename Variable,7
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Change Attribute Type,1
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Change Return Type,2
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Change Variable Type,3
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Inline Variable,4
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Rename Attribute,5
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Rename Method,6
+tika,580824e1088af50d5556e2a01d71311a42a74edc,Excessive Package Coupling,Rename Variable,7
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Cyclic Dependency,Extract Interface,1
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Cyclic Dependency,Pull Up Attribute,2
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Hub-like Dependency,Extract Interface,1
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Hub-like Dependency,Pull Up Attribute,2
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Large Component,Extract Interface,1
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Large Component,Pull Up Attribute,2
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Excessive Package Coupling,Extract Interface,1
+tika,a8d1e675a2c18e67b534df31823214d8c917c07c,Excessive Package Coupling,Pull Up Attribute,2
+maven,0abaebbe2917f4757859e6bf5b05da7e13a843b0,Excessive Package Coupling,Extract Method,1
+maven,0abaebbe2917f4757859e6bf5b05da7e13a843b0,Excessive Package Coupling,Rename Attribute,2
+maven,072609e0b3788efd42acaf3394f7a41ed8326cfa,Excessive Package Coupling,Rename Class,1
+maven,b36d96471545150e531d2b26ff1ebc31e41754e7,Excessive Package Coupling,Move Class,1
+maven,b36d96471545150e531d2b26ff1ebc31e41754e7,Excessive Package Coupling,Move And Rename Class,2
+camel,9c15e67cde9c4d17f2dfba9c9a3fc3a3dbb9d401,Cyclic Dependency,Move Source Folder,1
+camel,9c15e67cde9c4d17f2dfba9c9a3fc3a3dbb9d401,Large Component,Move Source Folder,1
+camel,9c15e67cde9c4d17f2dfba9c9a3fc3a3dbb9d401,Excessive Package Coupling,Move Source Folder,1
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Cyclic Dependency,Change Attribute Type,1
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Cyclic Dependency,Change Parameter Type,2
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Cyclic Dependency,Change Return Type,3
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Cyclic Dependency,Move And Rename Class,4
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Cyclic Dependency,Rename Package,5
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Large Component,Change Attribute Type,1
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Large Component,Change Parameter Type,2
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Large Component,Change Return Type,3
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Large Component,Move And Rename Class,4
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Large Component,Rename Package,5
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Excessive Package Coupling,Change Attribute Type,1
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Excessive Package Coupling,Change Parameter Type,2
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Excessive Package Coupling,Change Return Type,3
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Excessive Package Coupling,Move And Rename Class,4
+camel,d5e6b38aee4c69c2a1c06f032dad88a41d5e3e86,Excessive Package Coupling,Rename Package,5
+camel,b8d28505c84baabe75edfba0a43f3b2f06e19c13,Cyclic Dependency,Change Parameter Type,1
+camel,b8d28505c84baabe75edfba0a43f3b2f06e19c13,Large Component,Change Parameter Type,1
+camel,b8d28505c84baabe75edfba0a43f3b2f06e19c13,Excessive Package Coupling,Change Parameter Type,1
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Add Method Annotation,1
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Change Attribute Type,2
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Change Parameter Type,3
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Change Return Type,4
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Extract Method,5
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Parameterize Variable,6
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Remove Parameter,7
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Cyclic Dependency,Rename Variable,8
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Add Method Annotation,1
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Change Attribute Type,2
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Change Parameter Type,3
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Change Return Type,4
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Extract Method,5
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Parameterize Variable,6
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Remove Parameter,7
+camel,1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35,Excessive Package Coupling,Rename Variable,8
+camel,8b5459cfb18316ec2c96e63b0b70a4289ed0c755,Cyclic Dependency,Rename Method,1
+camel,8b5459cfb18316ec2c96e63b0b70a4289ed0c755,Large Component,Rename Method,1
+camel,8b5459cfb18316ec2c96e63b0b70a4289ed0c755,Excessive Package Coupling,Rename Method,1
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Move Class,1
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Change Attribute Type,2
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Change Parameter Type,3
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Change Return Type,4
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Change Variable Type,5
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Rename Attribute,6
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Rename Class,7
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Cyclic Dependency,Rename Method,8
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Change Attribute Type,1
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Change Parameter Type,2
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Change Return Type,3
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Change Variable Type,4
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Move Class,5
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Rename Attribute,6
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Rename Class,7
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Large Component,Rename Method,8
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Move Class,1
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Change Attribute Type,2
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Change Parameter Type,3
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Change Return Type,4
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Change Variable Type,5
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Rename Attribute,6
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Rename Class,7
+camel,160d9af7be83c6de8791c86dac799a1f4a055a09,Excessive Package Coupling,Rename Method,8
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Change Attribute Type,1
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Change Parameter Type,2
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Change Return Type,3
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Change Variable Type,4
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Rename Attribute,5
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Rename Class,6
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Rename Parameter,7
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Cyclic Dependency,Rename Variable,8
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Change Attribute Type,1
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Change Parameter Type,2
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Change Return Type,3
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Change Variable Type,4
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Rename Attribute,5
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Rename Class,6
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Rename Parameter,7
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Large Component,Rename Variable,8
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Change Attribute Type,1
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Change Parameter Type,2
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Change Return Type,3
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Change Variable Type,4
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Rename Attribute,5
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Rename Class,6
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Rename Parameter,7
+camel,bc29034e883303421c2f0c41511ea78dc39d6a9b,Excessive Package Coupling,Rename Variable,8
+camel,09cbd05f75f7afcc40e4fffa74892c7ce80a31e6,Cyclic Dependency,Move And Rename Class,1
+camel,09cbd05f75f7afcc40e4fffa74892c7ce80a31e6,Large Component,Move And Rename Class,1
+camel,09cbd05f75f7afcc40e4fffa74892c7ce80a31e6,Excessive Package Coupling,Move And Rename Class,1
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Cyclic Dependency,Change Type Declaration Kind,1
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Cyclic Dependency,Extract Subclass,2
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Cyclic Dependency,Inline Variable,3
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Cyclic Dependency,Push Down Attribute,4
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Cyclic Dependency,Push Down Method,5
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Large Component,Change Type Declaration Kind,1
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Large Component,Extract Subclass,2
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Large Component,Inline Variable,3
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Large Component,Push Down Attribute,4
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Large Component,Push Down Method,5
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Excessive Package Coupling,Change Type Declaration Kind,1
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Excessive Package Coupling,Extract Subclass,2
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Excessive Package Coupling,Inline Variable,3
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Excessive Package Coupling,Push Down Attribute,4
+camel,a8a1f3cd00b56d835c22a6a52d30db96d68a30ae,Excessive Package Coupling,Push Down Method,5
+camel,ac9d5e90c72180917d1d006c2e28d31229ad42ee,Cyclic Dependency,Rename Method,1
+camel,ac9d5e90c72180917d1d006c2e28d31229ad42ee,Cyclic Dependency,Rename Parameter,2
+camel,ac9d5e90c72180917d1d006c2e28d31229ad42ee,Large Component,Rename Method,1
+camel,ac9d5e90c72180917d1d006c2e28d31229ad42ee,Large Component,Rename Parameter,2
+camel,ac9d5e90c72180917d1d006c2e28d31229ad42ee,Excessive Package Coupling,Rename Method,1
+camel,ac9d5e90c72180917d1d006c2e28d31229ad42ee,Excessive Package Coupling,Rename Parameter,2
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Add Attribute Modifier,1
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Add Parameter,2
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Change Parameter Type,3
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Change Return Type,4
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Pull Up Method,5
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Rename Method,6
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Rename Parameter,7
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Rename Variable,8
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Cyclic Dependency,Replace Attribute With Variable,9
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Add Attribute Modifier,1
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Add Parameter,2
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Change Parameter Type,3
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Change Return Type,4
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Pull Up Method,5
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Rename Method,6
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Rename Parameter,7
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Rename Variable,8
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Large Component,Replace Attribute With Variable,9
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Add Attribute Modifier,1
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Add Parameter,2
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Change Parameter Type,3
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Change Return Type,4
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Pull Up Method,5
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Rename Method,6
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Rename Parameter,7
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Rename Variable,8
+camel,9c3a4e70bdc12b91709138fc3deddf50860052cb,Excessive Package Coupling,Replace Attribute With Variable,9
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Cyclic Dependency,Move Class,1
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Cyclic Dependency,Change Attribute Type,2
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Cyclic Dependency,Move Source Folder,3
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Large Component,Change Attribute Type,1
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Large Component,Move Class,2
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Large Component,Move Source Folder,3
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Excessive Package Coupling,Move Class,1
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Excessive Package Coupling,Change Attribute Type,2
+camel,3f90f9286e6d5eb4d344334c9690e3790a4fb544,Excessive Package Coupling,Move Source Folder,3
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Cyclic Dependency,Add Thrown Exception Type,1
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Cyclic Dependency,Extract Superclass,2
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Cyclic Dependency,Move And Rename Attribute,3
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Cyclic Dependency,Pull Up Method,4
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Cyclic Dependency,Rename Parameter,5
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Large Component,Add Thrown Exception Type,1
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Large Component,Extract Superclass,2
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Large Component,Move And Rename Attribute,3
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Large Component,Pull Up Method,4
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Large Component,Rename Parameter,5
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Excessive Package Coupling,Add Thrown Exception Type,1
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Excessive Package Coupling,Extract Superclass,2
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Excessive Package Coupling,Move And Rename Attribute,3
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Excessive Package Coupling,Pull Up Method,4
+camel,3e6804a397a9045eb296006a7089db13639d7f2d,Excessive Package Coupling,Rename Parameter,5
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Cyclic Dependency,Extract Interface,1
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Cyclic Dependency,Extract Method,2
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Cyclic Dependency,Rename Method,3
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Large Component,Extract Method,1
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Large Component,Extract Interface,2
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Large Component,Rename Method,3
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Excessive Package Coupling,Extract Interface,1
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Excessive Package Coupling,Extract Method,2
+camel,c58bccbd9df2b643661948f4dc12d3c538e69305,Excessive Package Coupling,Rename Method,3
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Move Method,1
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Change Attribute Type,2
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Change Parameter Type,3
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Change Return Type,4
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Change Variable Type,5
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Extract Superclass,6
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Move Attribute,7
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Pull Up Attribute,8
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Pull Up Method,9
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Rename Parameter,10
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Cyclic Dependency,Rename Variable,11
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Move Method,1
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Change Attribute Type,2
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Change Parameter Type,3
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Change Return Type,4
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Change Variable Type,5
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Extract Superclass,6
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Move Attribute,7
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Pull Up Attribute,8
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Pull Up Method,9
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Rename Parameter,10
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Hub-like Dependency,Rename Variable,11
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Move Attribute,1
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Move Method,2
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Change Attribute Type,3
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Change Parameter Type,4
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Change Return Type,5
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Change Variable Type,6
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Extract Superclass,7
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Pull Up Attribute,8
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Pull Up Method,9
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Rename Parameter,10
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Large Component,Rename Variable,11
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Move Method,1
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Change Attribute Type,2
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Change Parameter Type,3
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Change Return Type,4
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Change Variable Type,5
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Extract Superclass,6
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Move Attribute,7
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Pull Up Attribute,8
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Pull Up Method,9
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Rename Parameter,10
+camel,fbf682983abf08b58b2892d9d01c612bb6ee2f78,Excessive Package Coupling,Rename Variable,11
+camel,0424392709e1a8c0f6674e8621db9874c0e395de,Cyclic Dependency,Rename Method,1
+camel,0424392709e1a8c0f6674e8621db9874c0e395de,Hub-like Dependency,Rename Method,1
+camel,0424392709e1a8c0f6674e8621db9874c0e395de,Large Component,Rename Method,1
+camel,0424392709e1a8c0f6674e8621db9874c0e395de,Excessive Package Coupling,Rename Method,1
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Cyclic Dependency,Change Attribute Type,1
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Cyclic Dependency,Change Parameter Type,2
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Cyclic Dependency,Change Return Type,3
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Cyclic Dependency,Change Variable Type,4
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Cyclic Dependency,Remove Parameter Modifier,5
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Hub-like Dependency,Change Attribute Type,1
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Hub-like Dependency,Change Parameter Type,2
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Hub-like Dependency,Change Return Type,3
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Hub-like Dependency,Change Variable Type,4
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Hub-like Dependency,Remove Parameter Modifier,5
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Large Component,Change Attribute Type,1
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Large Component,Change Parameter Type,2
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Large Component,Change Return Type,3
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Large Component,Change Variable Type,4
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Large Component,Remove Parameter Modifier,5
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Excessive Package Coupling,Change Attribute Type,1
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Excessive Package Coupling,Change Parameter Type,2
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Excessive Package Coupling,Change Return Type,3
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Excessive Package Coupling,Change Variable Type,4
+camel,d4b2ebb217926da4981f3b784ac3f996b970c4ed,Excessive Package Coupling,Remove Parameter Modifier,5
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Cyclic Dependency,Add Method Annotation,1
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Cyclic Dependency,Change Method Access Modifier,2
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Cyclic Dependency,Change Variable Type,3
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Cyclic Dependency,Extract Method,4
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Cyclic Dependency,Extract Variable,5
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Cyclic Dependency,Rename Method,6
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Hub-like Dependency,Extract Method,1
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Hub-like Dependency,Add Method Annotation,2
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Hub-like Dependency,Change Method Access Modifier,3
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Hub-like Dependency,Change Variable Type,4
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Hub-like Dependency,Extract Variable,5
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Hub-like Dependency,Rename Method,6
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Large Component,Extract Method,1
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Large Component,Add Method Annotation,2
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Large Component,Change Method Access Modifier,3
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Large Component,Change Variable Type,4
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Large Component,Extract Variable,5
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Large Component,Rename Method,6
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Excessive Package Coupling,Add Method Annotation,1
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Excessive Package Coupling,Change Method Access Modifier,2
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Excessive Package Coupling,Change Variable Type,3
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Excessive Package Coupling,Extract Method,4
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Excessive Package Coupling,Extract Variable,5
+camel,7173ec91ea19aa42215d42b089bdd87e847f9d6e,Excessive Package Coupling,Rename Method,6
+camel,6da8eb176f0a3150b80bf3e1a8982a7a62e5c302,Cyclic Dependency,Move Class,1
+camel,6da8eb176f0a3150b80bf3e1a8982a7a62e5c302,Hub-like Dependency,Move Class,1
+camel,6da8eb176f0a3150b80bf3e1a8982a7a62e5c302,Large Component,Move Class,1
+camel,6da8eb176f0a3150b80bf3e1a8982a7a62e5c302,Excessive Package Coupling,Move Class,1
+camel,35cf84bd3a0784ee34e3d146545f95c74567ccd3,Cyclic Dependency,Move Method,1
+camel,35cf84bd3a0784ee34e3d146545f95c74567ccd3,Hub-like Dependency,Move Method,1
+camel,35cf84bd3a0784ee34e3d146545f95c74567ccd3,Large Component,Move Method,1
+camel,35cf84bd3a0784ee34e3d146545f95c74567ccd3,Excessive Package Coupling,Move Method,1
+ant,edb71783adeffc29a56df203f97b5ac0e4566a5d,Excessive Package Coupling,Change Attribute Type,1
+ant,edb71783adeffc29a56df203f97b5ac0e4566a5d,Excessive Package Coupling,Extract Attribute,2
+ant,edb71783adeffc29a56df203f97b5ac0e4566a5d,Excessive Package Coupling,Inline Method,3
+ant,65d02e393d8709dd9fd6f5d48b502b72507bbb86,Excessive Package Coupling,Change Variable Type,1
+ant,3c26912e56e06ac64c392444cb19e3587f1bbb11,Excessive Package Coupling,Rename Method,1
+ant,3c26912e56e06ac64c392444cb19e3587f1bbb11,Excessive Package Coupling,Rename Parameter,2
+ant,3c26912e56e06ac64c392444cb19e3587f1bbb11,Excessive Package Coupling,Rename Variable,3
+ant,ae16bb711b331f6c8a20ee1298cf171de43266f7,Excessive Package Coupling,Move Method,1
+ant,ae16bb711b331f6c8a20ee1298cf171de43266f7,Excessive Package Coupling,Change Method Access Modifier,2
+ant,ae16bb711b331f6c8a20ee1298cf171de43266f7,Excessive Package Coupling,Encapsulate Attribute,3
+ant,ae16bb711b331f6c8a20ee1298cf171de43266f7,Excessive Package Coupling,Remove Method Modifier,4
+ant,653124c46b538acb4d6caf265851fa991578d42d,Excessive Package Coupling,Rename Method,1
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Cyclic Dependency,Extract Class,1
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Cyclic Dependency,Move Attribute,2
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Cyclic Dependency,Move Code,3
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Cyclic Dependency,Remove Attribute Modifier,4
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Cyclic Dependency,Remove Method Modifier,5
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Cyclic Dependency,Replace Variable With Attribute,6
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Excessive Package Coupling,Extract Class,1
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Excessive Package Coupling,Move Attribute,2
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Excessive Package Coupling,Move Code,3
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Excessive Package Coupling,Remove Attribute Modifier,4
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Excessive Package Coupling,Remove Method Modifier,5
+ant,1ba5087df429abe38dd22fe5c9ddbc343280f0ae,Excessive Package Coupling,Replace Variable With Attribute,6
+ant,948ce9bca757a323b0e07ce25a10a76f759898ba,Cyclic Dependency,Add Thrown Exception Type,1
+ant,948ce9bca757a323b0e07ce25a10a76f759898ba,Excessive Package Coupling,Add Thrown Exception Type,1
+ant,b417973d391382a96e26e6c50751b9b24f85b239,Cyclic Dependency,Change Variable Type,1
+ant,b417973d391382a96e26e6c50751b9b24f85b239,Cyclic Dependency,Extract Variable,2
+ant,b417973d391382a96e26e6c50751b9b24f85b239,Cyclic Dependency,Rename Variable,3
+ant,b417973d391382a96e26e6c50751b9b24f85b239,Excessive Package Coupling,Change Variable Type,1
+ant,b417973d391382a96e26e6c50751b9b24f85b239,Excessive Package Coupling,Extract Variable,2
+ant,b417973d391382a96e26e6c50751b9b24f85b239,Excessive Package Coupling,Rename Variable,3
+ant,38c2a2a22283450dab6afcf3d3ec094c67dc1e4e,Cyclic Dependency,Extract Method,1
+ant,38c2a2a22283450dab6afcf3d3ec094c67dc1e4e,Cyclic Dependency,Parameterize Variable,2
+ant,38c2a2a22283450dab6afcf3d3ec094c67dc1e4e,Cyclic Dependency,Rename Variable,3
+ant,38c2a2a22283450dab6afcf3d3ec094c67dc1e4e,Excessive Package Coupling,Extract Method,1
+ant,38c2a2a22283450dab6afcf3d3ec094c67dc1e4e,Excessive Package Coupling,Parameterize Variable,2
+ant,38c2a2a22283450dab6afcf3d3ec094c67dc1e4e,Excessive Package Coupling,Rename Variable,3
+lucene,58bcd780a9a37d81dfcb6f4f17acccaddc03a438,Cyclic Dependency,Add Parameter Modifier,1
+lucene,58bcd780a9a37d81dfcb6f4f17acccaddc03a438,Cyclic Dependency,Add Variable Modifier,2
+lucene,58bcd780a9a37d81dfcb6f4f17acccaddc03a438,Large Component,Add Parameter Modifier,1
+lucene,58bcd780a9a37d81dfcb6f4f17acccaddc03a438,Large Component,Add Variable Modifier,2
+lucene,58bcd780a9a37d81dfcb6f4f17acccaddc03a438,Excessive Package Coupling,Add Parameter Modifier,1
+lucene,58bcd780a9a37d81dfcb6f4f17acccaddc03a438,Excessive Package Coupling,Add Variable Modifier,2
+lucene,89a554ffab239c0118ccd454d76cdf714d793911,Cyclic Dependency,Encapsulate Attribute,1
+lucene,89a554ffab239c0118ccd454d76cdf714d793911,Cyclic Dependency,Inline Variable,2
+lucene,89a554ffab239c0118ccd454d76cdf714d793911,Large Component,Encapsulate Attribute,1
+lucene,89a554ffab239c0118ccd454d76cdf714d793911,Large Component,Inline Variable,2
+lucene,89a554ffab239c0118ccd454d76cdf714d793911,Excessive Package Coupling,Encapsulate Attribute,1
+lucene,89a554ffab239c0118ccd454d76cdf714d793911,Excessive Package Coupling,Inline Variable,2
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Add Class Modifier,1
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Extract And Move Method,2
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Extract Method,3
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Invert Condition,4
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Remove Class Modifier,5
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Rename Class,6
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Cyclic Dependency,Rename Parameter,7
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Extract Method,1
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Add Class Modifier,2
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Extract And Move Method,3
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Invert Condition,4
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Remove Class Modifier,5
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Rename Class,6
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Large Component,Rename Parameter,7
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Add Class Modifier,1
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Extract And Move Method,2
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Extract Method,3
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Invert Condition,4
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Remove Class Modifier,5
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Rename Class,6
+lucene,2ae22a31e362c283a9b1a58621bd51512c1d5741,Excessive Package Coupling,Rename Parameter,7
+lucene,e120b8bd512967bb0c683f64d45546f5c617b548,Cyclic Dependency,Move Class,1
+lucene,e120b8bd512967bb0c683f64d45546f5c617b548,Cyclic Dependency,Move Package,2
+lucene,e120b8bd512967bb0c683f64d45546f5c617b548,Large Component,Move Class,1
+lucene,e120b8bd512967bb0c683f64d45546f5c617b548,Large Component,Move Package,2
+lucene,e120b8bd512967bb0c683f64d45546f5c617b548,Excessive Package Coupling,Move Class,1
+lucene,e120b8bd512967bb0c683f64d45546f5c617b548,Excessive Package Coupling,Move Package,2

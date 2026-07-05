@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "ef962a9a03b756c4ee546afe6efe69ad06f0a692",
+	"url": "https://github.com/apache/ant/commit/ef962a9a03b756c4ee546afe6efe69ad06f0a692",
+	"refactorings": []
+}]
+}

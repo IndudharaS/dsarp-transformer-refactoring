@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "35cf84bd3a0784ee34e3d146545f95c74567ccd3",
+	"url": "https://github.com/apache/camel/commit/35cf84bd3a0784ee34e3d146545f95c74567ccd3",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method protected assertExpression(expression Expression, exchange Exchange, expected Object) : void from class org.apache.camel.builder.script.GroovyTest to protected assertExpression(expression Expression, exchange Exchange, expected Object) : void from class org.apache.camel.TestSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-script/src/test/java/org/apache/camel/builder/script/GroovyTest.java",
+		"startLine": 66,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected assertExpression(expression Expression, exchange Exchange, expected Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/TestSupport.java",
+		"startLine": 63,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected assertExpression(expression Expression, exchange Exchange, expected Object) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected assertPredicate(expression Predicate, exchange Exchange, expected boolean) : void from class org.apache.camel.builder.script.GroovyTest to protected assertPredicate(expression Predicate, exchange Exchange, expected boolean) : void from class org.apache.camel.TestSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-script/src/test/java/org/apache/camel/builder/script/GroovyTest.java",
+		"startLine": 77,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected assertPredicate(expression Predicate, exchange Exchange, expected boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/TestSupport.java",
+		"startLine": 74,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected assertPredicate(expression Predicate, exchange Exchange, expected boolean) : void"
+}]
+}
+]
+}]
+}

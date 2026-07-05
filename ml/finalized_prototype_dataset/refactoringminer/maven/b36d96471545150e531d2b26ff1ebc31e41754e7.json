@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/maven.git",
+	"sha1": "b36d96471545150e531d2b26ff1ebc31e41754e7",
+	"url": "https://github.com/apache/maven/commit/b36d96471545150e531d2b26ff1ebc31e41754e7",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.maven.plugin.ResourcesMojo moved to org.apache.maven.plugin.resources.ResourcesMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/main/java/org/apache/maven/plugin/ResourcesMojo.java",
+		"startLine": 70,
+		"endLine": 250,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.maven.plugin.ResourcesMojo"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/main/java/org/apache/maven/plugin/resources/ResourcesMojo.java",
+		"startLine": 35,
+		"endLine": 215,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.maven.plugin.resources.ResourcesMojo"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.maven.plugin.TestResourcesMojo moved to org.apache.maven.plugin.resources.TestResourcesMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/main/java/org/apache/maven/plugin/TestResourcesMojo.java",
+		"startLine": 70,
+		"endLine": 91,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.maven.plugin.TestResourcesMojo"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/main/java/org/apache/maven/plugin/resources/TestResourcesMojo.java",
+		"startLine": 31,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.maven.plugin.resources.TestResourcesMojo"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.maven.plugin.ResourcesPluginTest moved and renamed to org.apache.maven.plugin.resources.ResourcesMojoTest",
+	"leftSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/test/java/org/apache/maven/plugin/ResourcesPluginTest.java",
+		"startLine": 17,
+		"endLine": 104,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.maven.plugin.ResourcesPluginTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/test/java/org/apache/maven/plugin/resources/ResourcesMojoTest.java",
+		"startLine": 33,
+		"endLine": 120,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.maven.plugin.resources.ResourcesMojoTest"
+}]
+}
+]
+}]
+}

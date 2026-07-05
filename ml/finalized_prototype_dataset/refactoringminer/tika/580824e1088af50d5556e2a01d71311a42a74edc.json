@@ -1,0 +1,465 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "580824e1088af50d5556e2a01d71311a42a74edc",
+	"url": "https://github.com/apache/tika/commit/580824e1088af50d5556e2a01d71311a42a74edc",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable pc : ParserConfig in method public parse(stream InputStream, handler ContentHandler, metadata Metadata) : void from class org.apache.tika.parser.AutoDetectParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/AutoDetectParser.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 22,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "pc : ParserConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/AutoDetectParser.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/AutoDetectParser.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable config : ParserConfig in method public testPPTExtraction() : void from class org.apache.tika.TestParsers",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 106,
+		"endLine": 107,
+		"startColumn": 22,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "config : ParserConfig"
+}, {
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable config : ParserConfig in method public testWORDxtraction() : void from class org.apache.tika.TestParsers",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 22,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "config : ParserConfig"
+}, {
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable config : ParserConfig in method public testEXCELExtraction() : void from class org.apache.tika.TestParsers",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 22,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "config : ParserConfig"
+}, {
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable config : ParserConfig in method public testHTMLExtraction() : void from class org.apache.tika.TestParsers",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 22,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "config : ParserConfig"
+}, {
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable pc : ParserConfig in method public getStringContent(stream InputStream, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 26,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "pc : ParserConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getParserConfig(mimeType String) : ParserConfig renamed to public getParser(mimeType String) : Parser in class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 85,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParserConfig(mimeType String) : ParserConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 93,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getParser(mimeType String) : Parser"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type config : ParserConfig to parser : Parser in method public TikaConfig(element Element) from class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 26,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "config : ParserConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 81,
+		"endLine": 82,
+		"startColumn": 24,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "parser : Parser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable config : ParserConfig to parser : Parser in method public TikaConfig(element Element) from class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 26,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "config : ParserConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 81,
+		"endLine": 82,
+		"startColumn": 24,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "parser : Parser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable parser : Object to node : Object in method public TikaConfig(element Element) from class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parser : Object"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 77,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "node : Object"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 78,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ParserConfig to Parser in method public getParser(mimeType String) : Parser from class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ParserConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 85,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParserConfig(mimeType String) : ParserConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Parser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 93,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getParser(mimeType String) : Parser"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute configs : Map<String,ParserConfig> to parsers : Map<String,Parser> in class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 47,
+		"endLine": 48,
+		"startColumn": 45,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "configs : Map<String,ParserConfig>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 39,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "parsers : Map<String,Parser>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type configs : Map<String,ParserConfig> to parsers : Map<String,Parser> in class org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 47,
+		"endLine": 48,
+		"startColumn": 45,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "configs : Map<String,ParserConfig>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 39,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "parsers : Map<String,Parser>"
+}]
+}
+]
+}]
+}

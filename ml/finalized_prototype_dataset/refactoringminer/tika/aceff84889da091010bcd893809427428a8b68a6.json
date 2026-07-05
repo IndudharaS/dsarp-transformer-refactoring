@@ -1,0 +1,1326 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "aceff84889da091010bcd893809427428a8b68a6",
+	"url": "https://github.com/apache/tika/commit/aceff84889da091010bcd893809427428a8b68a6",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.utils.MSExtractor.PropertiesReaderListener moved to org.apache.tika.ms.PropertiesReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 75,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.utils.MSExtractor.PropertiesReaderListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.ms.PropertiesReaderListener"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.tika.utils.MSExtractor moved and renamed to org.apache.tika.ms.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 30,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.utils.MSExtractor"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 30,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.tika.ms.MSParser"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute buf : StringBuffer to builder : StringBuilder in class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 44,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "buf : StringBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "builder : StringBuilder"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type buf : StringBuffer to builder : StringBuilder in class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 44,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "buf : StringBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "builder : StringBuilder"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private builder : StringBuilder from class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 44,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected buf : StringBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private builder : StringBuilder"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier transient in attribute protected buf : StringBuffer from class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 44,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected buf : StringBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private builder : StringBuilder"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type content : StringBuffer to builder : StringBuilder in method public ContentReaderListener(builder StringBuilder) from class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "content : StringBuffer"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 34,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter Modifier",
+	"description": "Remove Parameter Modifier final in parameter content : StringBuffer in method public ContentReaderListener(content StringBuffer) from class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "content : StringBuffer"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 46,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ContentReaderListener(content StringBuffer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 34,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "builder : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 43,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public ContentReaderListener(builder StringBuilder)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter content : StringBuffer to builder : StringBuilder in method public ContentReaderListener(builder StringBuilder) from class org.apache.tika.parser.mspowerpoint.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "content : StringBuffer"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 34,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "builder : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to package in class org.apache.tika.ms.PropertiesReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 75,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.tika.utils.MSExtractor.PropertiesReaderListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.apache.tika.ms.PropertiesReaderListener"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public extract(input InputStream, metadata Metadata) : String renamed to public parse(input InputStream, metadata Metadata) : String in class org.apache.tika.ms.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 43,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extract(input InputStream, metadata Metadata) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 37,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public parse(input InputStream, metadata Metadata) : String"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected abstract extractText(input InputStream) : String from class org.apache.tika.ms.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 76,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract extractText(input InputStream) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected abstract extractText(input InputStream) : String"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable reader : POIFSReader to reader : POIFSReader in method public parse(input InputStream, metadata Metadata) : String from class org.apache.tika.ms.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 25,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "reader : POIFSReader"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 53,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "reader : POIFSReader"
+}, {
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type Exception to [IOException, TikaException] in method public parse(input InputStream, metadata Metadata) : String from class org.apache.tika.ms.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 72,
+		"endColumn": 81,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 43,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extract(input InputStream, metadata Metadata) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 37,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public parse(input InputStream, metadata Metadata) : String"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable wb : HSSFWorkbook in method public extractText(input InputStream) : String from class org.apache.tika.parser.msexcel.ExcelExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "wb : HSSFWorkbook"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable resultText : StringBuilder to builder : StringBuilder in method protected extractText(input InputStream) : String from class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 19,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resultText : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 23,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "builder : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected extractText(input InputStream) : String from class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 40,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extractText(input InputStream) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 32,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected extractText(input InputStream) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public extractText(input InputStream) : String from class org.apache.tika.parser.msexcel.ExcelExtractor to protected extractText(input InputStream) : String from class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 40,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extractText(input InputStream) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 32,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected extractText(input InputStream) : String"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private extractText(cell HSSFCell, builder StringBuilder) : void extracted from public extractText(input InputStream) : String in class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 40,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public extractText(input InputStream) : String"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 45,
+		"endColumn": 71,
+		"codeElementType": "QUALIFIED_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 76,
+		"endLine": 81,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 46,
+		"endColumn": 72,
+		"codeElementType": "QUALIFIED_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 74,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 39,
+		"endColumn": 64,
+		"codeElementType": "QUALIFIED_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 69,
+		"endLine": 83,
+		"startColumn": 56,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 56,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private extractText(cell HSSFCell, builder StringBuilder) : void"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 58,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 18,
+		"endColumn": 44,
+		"codeElementType": "QUALIFIED_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 18,
+		"endColumn": 44,
+		"codeElementType": "QUALIFIED_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "QUALIFIED_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 57,
+		"endLine": 69,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private extractText(book HSSFWorkbook, builder StringBuilder) : void"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "extractText(book.getSheetAt(i),builder)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 17,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "SWITCH_CASE",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 57,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private addText(text String, builder StringBuilder) : void extracted from public extractText(input InputStream) : String in class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 40,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public extractText(input InputStream) : String"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 15,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 15,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 69,
+		"endLine": 83,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 74,
+		"endLine": 76,
+		"startColumn": 66,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 68,
+		"endLine": 84,
+		"startColumn": 36,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 57,
+		"endLine": 86,
+		"startColumn": 32,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 72,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private addText(text String, builder StringBuilder) : void"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 73,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 43,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 36,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 73,
+		"endLine": 81,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private extractText(book HSSFWorkbook, builder StringBuilder) : void"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 17,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addText(cell.getRichStringCellValue().getString(),builder)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addText(Double.toString(cell.getNumericCellValue()),builder)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private addText(text String, builder StringBuilder) : void extracted from public extractText(input InputStream) : String in class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 40,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public extractText(input InputStream) : String"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 15,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 69,
+		"endLine": 83,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 69,
+		"endLine": 83,
+		"startColumn": 56,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 76,
+		"endLine": 79,
+		"startColumn": 74,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 72,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private addText(text String, builder StringBuilder) : void"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 73,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 73,
+		"endLine": 81,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 43,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private extractText(book HSSFWorkbook, builder StringBuilder) : void"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 17,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addText(cell.getRichStringCellValue().getString(),builder)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addText(Double.toString(cell.getNumericCellValue()),builder)"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 36,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable reader : POIFSReader to reader : POIFSReader in method protected extractText(input InputStream) : String from class org.apache.tika.parser.mspowerpoint.MsPowerPointParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTExtractor.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 25,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "reader : POIFSReader"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTExtractor.java",
+		"startLine": 43,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTExtractor.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 21,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "reader : POIFSReader"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected extractText(input InputStream) : String from class org.apache.tika.parser.mspowerpoint.MsPowerPointParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTExtractor.java",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extractText(input InputStream) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected extractText(input InputStream) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public extractText(input InputStream) : String from class org.apache.tika.parser.mspowerpoint.PPTExtractor to protected extractText(input InputStream) : String from class org.apache.tika.parser.mspowerpoint.MsPowerPointParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTExtractor.java",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extractText(input InputStream) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected extractText(input InputStream) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public extractText(in InputStream) : String from class org.apache.tika.parser.msword.WordExtractor to public extractText(in InputStream) : String from class org.apache.tika.parser.msword.MsWordParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/WordExtractor.java",
+		"startLine": 50,
+		"endLine": 205,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extractText(in InputStream) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 41,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public extractText(in InputStream) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private isDeleted(grpprl byte[]) : boolean from class org.apache.tika.parser.msword.WordExtractor to private isDeleted(grpprl byte[]) : boolean from class org.apache.tika.parser.msword.MsWordParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/WordExtractor.java",
+		"startLine": 207,
+		"endLine": 226,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isDeleted(grpprl byte[]) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 177,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private isDeleted(grpprl byte[]) : boolean"
+}]
+}
+]
+}]
+}

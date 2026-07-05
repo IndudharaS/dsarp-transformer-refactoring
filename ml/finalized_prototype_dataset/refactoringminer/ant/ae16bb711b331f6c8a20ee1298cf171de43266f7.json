@@ -1,0 +1,162 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "ae16bb711b331f6c8a20ee1298cf171de43266f7",
+	"url": "https://github.com/apache/ant/commit/ae16bb711b331f6c8a20ee1298cf171de43266f7",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public translatePath(to_process String) : String from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 447,
+		"endLine": 486,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public translatePath(to_process String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 467,
+		"endLine": 505,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public translatePath(to_process String) : String"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute protected target : Target from class org.apache.tools.ant.Task",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected target : Target"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "protected target : Target"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 78,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setTarget(target Target) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public copyFile(sourceFile String, destFile String) : void from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 109,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyFile(sourceFile String, destFile String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 507,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public copyFile(sourceFile String, destFile String) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected copyFile(sourceFile String, destFile String) : void from class org.apache.tools.ant.Task to public copyFile(sourceFile String, destFile String) : void from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 109,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyFile(sourceFile String, destFile String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 507,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public copyFile(sourceFile String, destFile String) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public copyFile(sourceFile File, destFile File) : void from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 120,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyFile(sourceFile File, destFile File) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 519,
+		"endLine": 575,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public copyFile(sourceFile File, destFile File) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected copyFile(sourceFile File, destFile File) : void from class org.apache.tools.ant.Task to public copyFile(sourceFile File, destFile File) : void from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Task.java",
+		"startLine": 120,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyFile(sourceFile File, destFile File) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 519,
+		"endLine": 575,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public copyFile(sourceFile File, destFile File) : void"
+}]
+}
+]
+}]
+}
