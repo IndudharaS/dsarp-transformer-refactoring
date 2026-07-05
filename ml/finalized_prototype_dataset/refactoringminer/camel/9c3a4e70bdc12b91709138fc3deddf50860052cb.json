@@ -1,0 +1,570 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "9c3a4e70bdc12b91709138fc3deddf50860052cb",
+	"url": "https://github.com/apache/camel/commit/9c3a4e70bdc12b91709138fc3deddf50860052cb",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter context : CamelContext in method protected BuilderSupport(context CamelContext) from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 33,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected BuilderSupport()"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 30,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "context : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected BuilderSupport(context CamelContext)"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable context : CamelContext<E> to context : CamelContext<E> in method public getContext() : CamelContext<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 29,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "context : CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 25,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "context : CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 88,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected initRandomNumberGenerator() : void renamed to protected getRandomNumberGenerator() : Random in class org.apache.camel.processor.RedeliveryPolicy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 226,
+		"endLine": 230,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected initRandomNumberGenerator() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 227,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected getRandomNumberGenerator() : Random"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier transient in attribute protected randomNumberGenerator : Random from class org.apache.camel.processor.RedeliveryPolicy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 29,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected randomNumberGenerator : Random"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 39,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "protected randomNumberGenerator : Random"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to Random in method protected getRandomNumberGenerator() : Random from class org.apache.camel.processor.RedeliveryPolicy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 35,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 226,
+		"endLine": 230,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected initRandomNumberGenerator() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 35,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Random"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 227,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected getRandomNumberGenerator() : Random"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable randomNumberGenerator : Random to random : Random in method public getRedeliveryDelay(previousDelay long) : long from class org.apache.camel.processor.RedeliveryPolicy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 29,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "randomNumberGenerator : Random"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 161,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 20,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "random : Random"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RedeliveryPolicy.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 13,
+		"endColumn": 131,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public endpoints(uris String...) : List<Endpoint<E>> from class org.apache.camel.builder.FromBuilder to public endpoints(uris String...) : List<Endpoint<E>> from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 61,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public endpoints(uris String...) : List<Endpoint<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 60,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public endpoints(uris String...) : List<Endpoint<E>>"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable endpoints : List<Endpoint<E>> to answer : List<Endpoint<E>> in method public endpoints(endpoints Endpoint<E>...) : List<Endpoint<E>> from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 27,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "endpoints : List<Endpoint<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 27,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "answer : List<Endpoint<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable uri : Endpoint<E> to endpoint : Endpoint<E> in method public endpoints(endpoints Endpoint<E>...) : List<Endpoint<E>> from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "uri : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 14,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "endpoint : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter uris : Endpoint<E>... to endpoints : Endpoint<E>... in method public endpoints(endpoints Endpoint<E>...) : List<Endpoint<E>> from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 40,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "uris : Endpoint<E>..."
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 40,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "endpoints : Endpoint<E>..."
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public endpoints(uris Endpoint<E>...) : List<Endpoint<E>> from class org.apache.camel.builder.FromBuilder to public endpoints(endpoints Endpoint<E>...) : List<Endpoint<E>> from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 69,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public endpoints(uris Endpoint<E>...) : List<Endpoint<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 71,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public endpoints(endpoints Endpoint<E>...) : List<Endpoint<E>>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type context : CamelContext<E> to context : CamelContext in method public setContext(context CamelContext) : void from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 28,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "context : CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "context : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setContext(context CamelContext<E>) : void from class org.apache.camel.builder.RouteBuilder to public setContext(context CamelContext) : void from class org.apache.camel.builder.BuilderSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setContext(context CamelContext<E>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/BuilderSupport.java",
+		"startLine": 178,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setContext(context CamelContext) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method protected assertEndpointUri(endpoint Endpoint<Exchange>, uri String) : void from class org.apache.camel.builder.RouteBuilderTest to protected assertEndpointUri(endpoint Endpoint<Exchange>, uri String) : void from class org.apache.camel.TestSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/RouteBuilderTest.java",
+		"startLine": 420,
+		"endLine": 422,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected assertEndpointUri(endpoint Endpoint<Exchange>, uri String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/TestSupport.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected assertEndpointUri(endpoint Endpoint<Exchange>, uri String) : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,321 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "edb71783adeffc29a56df203f97b5ac0e4566a5d",
+	"url": "https://github.com/apache/ant/commit/edb71783adeffc29a56df203f97b5ac0e4566a5d",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type targets : String[] to targets : Vector in class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "targets : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 27,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "targets : Vector"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private exit(code int) : void inlined to private runBuild() : void in class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 271,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private exit(code int) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 181,
+		"endLine": 251,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private runBuild() : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 6,
+		"endColumn": 13,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "exit(1)"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "exit(1)"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 162,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private runBuild() : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private exit(code int) : void inlined to private runBuild() : void in class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 271,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private exit(code int) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 181,
+		"endLine": 251,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private runBuild() : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 6,
+		"endColumn": 13,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "exit(1)"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "exit(1)"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 162,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private runBuild() : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute public JAVA_1_0 : String in class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 32,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public JAVA_1_0 : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute public JAVA_1_1 : String in class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 32,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public JAVA_1_1 : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute public JAVA_1_2 : String in class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 32,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public JAVA_1_2 : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute public JAVA_1_3 : String in class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 32,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public JAVA_1_3 : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+}
+]
+}]
+}

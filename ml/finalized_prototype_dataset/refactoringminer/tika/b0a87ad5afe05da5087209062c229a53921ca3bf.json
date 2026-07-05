@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "b0a87ad5afe05da5087209062c229a53921ca3bf",
+	"url": "https://github.com/apache/tika/commit/b0a87ad5afe05da5087209062c229a53921ca3bf",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public testParseUTF8() : void renamed to public XtestParseUTF8() : void in class org.apache.tika.parser.html.HtmlParserTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/parser/html/HtmlParserTest.java",
+		"startLine": 63,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testParseUTF8() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/parser/html/HtmlParserTest.java",
+		"startLine": 63,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public XtestParseUTF8() : void"
+}]
+}
+]
+}]
+}

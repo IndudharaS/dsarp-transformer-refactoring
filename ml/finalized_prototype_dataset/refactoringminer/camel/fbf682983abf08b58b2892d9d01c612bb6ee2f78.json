@@ -1,0 +1,918 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "fbf682983abf08b58b2892d9d01c612bb6ee2f78",
+	"url": "https://github.com/apache/camel/commit/fbf682983abf08b58b2892d9d01c612bb6ee2f78",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Headers to Map<String,Object> in method public getHeaders() : Map<String,Object> from class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 12,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Headers"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Headers"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 57,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Headers to Map<String,Object> in method public getHeaders() : Map<String,Object> from class org.apache.camel.Message",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Message.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Headers"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Message.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Headers"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Message.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Message.java",
+		"startLine": 46,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type headers : Headers to headers : Map<String,Object> in class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "headers : Headers"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "headers : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Headers to Map<String,Object> in method public getHeaders() : Map<String,Object> from class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Headers"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 64,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Headers"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 77,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type headers : Headers to headers : Map<String,Object> in method public setHeaders(headers Map<String,Object>) : void from class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 28,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "headers : Headers"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 28,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "headers : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type headers : Headers to headers : Map<String,Object> in class org.apache.camel.impl.DefaultMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "headers : Headers"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "headers : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Headers to Map<String,Object> in method public getHeaders() : Map<String,Object> from class org.apache.camel.impl.DefaultMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Headers"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Headers"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type headers : Headers to headers : Map<String,Object> in method public setHeaders(headers Map<String,Object>) : void from class org.apache.camel.impl.DefaultMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 28,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "headers : Headers"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 28,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "headers : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type DefaultMessage to DefaultJmsMessage in method public newInstance() : DefaultJmsMessage from class org.apache.camel.component.jms.DefaultJmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "DefaultMessage"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public newInstance() : DefaultMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "DefaultJmsMessage"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 113,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public newInstance() : DefaultJmsMessage"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter exchange : JmsExchange to e : JmsExchange in method public onExchange(e JmsExchange) : void from class org.apache.camel.component.jms.JmsRouteTest.testJmsRoute.setRoutes.new RouteBuilder.configure.process.new Processor<JmsExchange>",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 44,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "exchange : JmsExchange"
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 25,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 44,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "e : JmsExchange"
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable exchange2 : JmsExchange to exchange : JmsExchange in method public testJmsRoute() : void from class org.apache.camel.component.jms.JmsRouteTest",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "exchange2 : JmsExchange"
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "exchange : JmsExchange"
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/component/jms/JmsRouteTest.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getBody() : Object from class org.apache.camel.impl.DefaultMessage to public getBody() : Object from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getBody() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getBody() : Object"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getBody(type Class<T>) : T from class org.apache.camel.impl.DefaultMessage to public getBody(type Class<T>) : T from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getBody(type Class<T>) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 40,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getBody(type Class<T>) : T"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setBody(body Object) : void from class org.apache.camel.impl.DefaultMessage to public setBody(body Object) : void from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setBody(body Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setBody(body Object) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setBody(body Object, type Class<T>) : void from class org.apache.camel.impl.DefaultMessage to public setBody(body Object, type Class<T>) : void from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setBody(body Object, type Class<T>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 53,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setBody(body Object, type Class<T>) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public copy() : Message from class org.apache.camel.impl.DefaultMessage to public copy() : Message from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 62,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public copy() : Message"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 64,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public copy() : Message"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : DefaultMessage to answer : Message in method public copy() : Message from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : DefaultMessage"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : Message"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private body : Object from class org.apache.camel.impl.DefaultMessage to private body : Object from class org.apache.camel.impl.MessageSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private body : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private body : Object"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.camel.impl.MessageSupport from classes [org.apache.camel.impl.DefaultMessage, org.apache.camel.component.jms.DefaultJmsMessage]",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 23,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.impl.DefaultMessage"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 25,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.component.jms.DefaultJmsMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 25,
+		"endLine": 58,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.impl.DefaultMessage"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 29,
+		"endLine": 117,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.component.jms.DefaultJmsMessage"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/MessageSupport.java",
+		"startLine": 23,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.camel.impl.MessageSupport"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getHeader(name String) : Object from class org.apache.camel.Headers to public getHeader(name String) : Object from class org.apache.camel.Message",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Headers.java",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Message.java",
+		"startLine": 30,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public setHeader(name String, value Object) : void from class org.apache.camel.Headers to public setHeader(name String, value Object) : void from class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Headers.java",
+		"startLine": 37,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 49,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getHeader(name String) : Object from class org.apache.camel.impl.DefaultHeaders to public getHeader(name String) : Object from class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultHeaders.java",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 66,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public setHeader(name String, value Object) : void from class org.apache.camel.impl.DefaultHeaders to public setHeader(name String, value Object) : void from class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultHeaders.java",
+		"startLine": 42,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getHeader(name String) : Object from class org.apache.camel.component.jms.JmsHeaders to public getHeader(name String) : Object from class org.apache.camel.component.jms.DefaultJmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsHeaders.java",
+		"startLine": 40,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 51,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public setHeader(name String, value Object) : void from class org.apache.camel.component.jms.JmsHeaders to public setHeader(name String, value Object) : void from class org.apache.camel.component.jms.DefaultJmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsHeaders.java",
+		"startLine": 59,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 69,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getHeaders() : Map<String,Object> from class org.apache.camel.component.jms.JmsHeaders to public getHeaders() : Map<String,Object> from class org.apache.camel.component.jms.DefaultJmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsHeaders.java",
+		"startLine": 77,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 86,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private lazyHeaders : Map<String,Object> from class org.apache.camel.component.jms.JmsHeaders to private lazyHeaders : Map<String,Object> from class org.apache.camel.component.jms.DefaultJmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsHeaders.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private lazyHeaders : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/DefaultJmsMessage.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private lazyHeaders : Map<String,Object>"
+}]
+}
+]
+}]
+}

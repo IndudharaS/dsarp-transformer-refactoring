@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "e759bbbc8afcc8d490562eb08c14a10c509adc20",
+	"url": "https://github.com/apache/tika/commit/e759bbbc8afcc8d490562eb08c14a10c509adc20",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.tika.parser.microsoft.MSParser renamed to org.apache.tika.parser.microsoft.OfficeParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.MSParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/OfficeParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.OfficeParser"
+}]
+}
+]
+}]
+}

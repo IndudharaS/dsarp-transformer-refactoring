@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/lucene.git",
+	"sha1": "89a554ffab239c0118ccd454d76cdf714d793911",
+	"url": "https://github.com/apache/lucene/commit/89a554ffab239c0118ccd454d76cdf714d793911",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private exclusions : Hashtable from class org.apache.lucene.analysis.de.GermanStemFilter",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/de/GermanStemFilter.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exclusions : Hashtable"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/de/GermanStemFilter.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private exclusions : Hashtable"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/de/GermanStemFilter.java",
+		"startLine": 68,
+		"endLine": 73,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setExclusionTable(exclusiontable Hashtable) : void"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable absoluteName : File in method public getWordtable(path String, wordfile String) : Hashtable from class org.apache.lucene.analysis.de.WordlistLoader",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/de/WordlistLoader.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 8,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "absoluteName : File"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/de/WordlistLoader.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/de/WordlistLoader.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable absoluteName : File in method public getWordtable(wordfile String) : Hashtable from class org.apache.lucene.analysis.de.WordlistLoader",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/de/WordlistLoader.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 8,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "absoluteName : File"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/de/WordlistLoader.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/de/WordlistLoader.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

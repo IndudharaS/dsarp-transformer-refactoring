@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "6da8eb176f0a3150b80bf3e1a8982a7a62e5c302",
+	"url": "https://github.com/apache/camel/commit/6da8eb176f0a3150b80bf3e1a8982a7a62e5c302",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.BuilderAction moved to org.apache.camel.spring.builder.BuilderAction",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/BuilderAction.java",
+		"startLine": 11,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.BuilderAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/builder/BuilderAction.java",
+		"startLine": 11,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.BuilderAction"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.BuilderStatement moved to org.apache.camel.spring.builder.BuilderStatement",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/BuilderStatement.java",
+		"startLine": 7,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.BuilderStatement"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/builder/BuilderStatement.java",
+		"startLine": 7,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.BuilderStatement"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.CamelBeanDefinitionParser moved to org.apache.camel.spring.builder.CamelBeanDefinitionParser",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/CamelBeanDefinitionParser.java",
+		"startLine": 32,
+		"endLine": 366,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.CamelBeanDefinitionParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/builder/CamelBeanDefinitionParser.java",
+		"startLine": 32,
+		"endLine": 366,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.CamelBeanDefinitionParser"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.IllegalActionException moved to org.apache.camel.spring.builder.IllegalActionException",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/IllegalActionException.java",
+		"startLine": 3,
+		"endLine": 20,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.IllegalActionException"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/builder/IllegalActionException.java",
+		"startLine": 3,
+		"endLine": 20,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.IllegalActionException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.MethodInfo moved to org.apache.camel.spring.builder.MethodInfo",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/MethodInfo.java",
+		"startLine": 12,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.MethodInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/builder/MethodInfo.java",
+		"startLine": 12,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.MethodInfo"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.RouteBuilderFactory moved to org.apache.camel.spring.builder.RouteBuilderFactory",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/RouteBuilderFactory.java",
+		"startLine": 11,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.RouteBuilderFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/main/java/org/apache/camel/spring/builder/RouteBuilderFactory.java",
+		"startLine": 11,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.RouteBuilderFactory"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.spring.SpringRouteBuilderTest moved to org.apache.camel.spring.builder.SpringRouteBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "camel-spring/src/test/java/org/apache/camel/spring/SpringRouteBuilderTest.java",
+		"startLine": 26,
+		"endLine": 101,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.spring.SpringRouteBuilderTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-spring/src/test/java/org/apache/camel/spring/builder/SpringRouteBuilderTest.java",
+		"startLine": 26,
+		"endLine": 101,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.spring.builder.SpringRouteBuilderTest"
+}]
+}
+]
+}]
+}

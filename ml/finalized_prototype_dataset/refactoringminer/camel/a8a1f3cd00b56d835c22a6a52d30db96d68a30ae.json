@@ -1,0 +1,969 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "a8a1f3cd00b56d835c22a6a52d30db96d68a30ae",
+	"url": "https://github.com/apache/camel/commit/a8a1f3cd00b56d835c22a6a52d30db96d68a30ae",
+	"refactorings": [{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind class to interface in type org.apache.camel.CamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 29,
+		"endLine": 194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.camel.CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 25,
+		"endLine": 97,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "org.apache.camel.CamelContext"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public addComponent(componentName String, component Component<E>) : void from class org.apache.camel.CamelContext to public addComponent(componentName String, component Component<E>) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 110,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addComponent(componentName String, component Component<E>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 49,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public addComponent(componentName String, component Component<E>) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getComponent(componentName String) : Component from class org.apache.camel.CamelContext to public getComponent(componentName String) : Component from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 84,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getComponent(componentName String) : Component"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 61,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getComponent(componentName String) : Component"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable component : Component in method public getComponent(componentName String) : Component from class org.apache.camel.CamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 23,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "component : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component from class org.apache.camel.CamelContext to public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 64,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 78,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public activateEndpoints() : void from class org.apache.camel.CamelContext to public activateEndpoints() : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 43,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public activateEndpoints() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 117,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public activateEndpoints() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public deactivateEndpoints() : void from class org.apache.camel.CamelContext to public deactivateEndpoints() : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 54,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deactivateEndpoints() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 128,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public deactivateEndpoints() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getEndpointResolver() : EndpointResolver<E> from class org.apache.camel.CamelContext to public getEndpointResolver() : EndpointResolver<E> from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 135,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getEndpointResolver() : EndpointResolver<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 164,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getEndpointResolver() : EndpointResolver<E>"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setEndpointResolver(endpointResolver EndpointResolver<E>) : void from class org.apache.camel.CamelContext to public setEndpointResolver(endpointResolver EndpointResolver<E>) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 142,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setEndpointResolver(endpointResolver EndpointResolver<E>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 171,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setEndpointResolver(endpointResolver EndpointResolver<E>) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getExchangeConverter() : ExchangeConverter from class org.apache.camel.CamelContext to public getExchangeConverter() : ExchangeConverter from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchangeConverter() : ExchangeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 175,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getExchangeConverter() : ExchangeConverter"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setExchangeConverter(exchangeConverter ExchangeConverter) : void from class org.apache.camel.CamelContext to public setExchangeConverter(exchangeConverter ExchangeConverter) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 153,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setExchangeConverter(exchangeConverter ExchangeConverter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 182,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setExchangeConverter(exchangeConverter ExchangeConverter) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getTypeConverter() : TypeConverter from class org.apache.camel.CamelContext to public getTypeConverter() : TypeConverter from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 157,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTypeConverter() : TypeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 186,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getTypeConverter() : TypeConverter"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setTypeConverter(typeConverter TypeConverter) : void from class org.apache.camel.CamelContext to public setTypeConverter(typeConverter TypeConverter) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setTypeConverter(typeConverter TypeConverter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 193,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setTypeConverter(typeConverter TypeConverter) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected createEndpointResolver() : EndpointResolver<E> from class org.apache.camel.CamelContext to protected createEndpointResolver() : EndpointResolver<E> from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 171,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createEndpointResolver() : EndpointResolver<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 200,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected createEndpointResolver() : EndpointResolver<E>"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected createExchangeConverter() : ExchangeConverter from class org.apache.camel.CamelContext to protected createExchangeConverter() : ExchangeConverter from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 179,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createExchangeConverter() : ExchangeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 208,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected createExchangeConverter() : ExchangeConverter"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method private createTypeConverter() : TypeConverter from class org.apache.camel.CamelContext to private createTypeConverter() : TypeConverter from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 187,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createTypeConverter() : TypeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 216,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "private createTypeConverter() : TypeConverter"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private endpointResolver : EndpointResolver<E> from class org.apache.camel.CamelContext to private endpointResolver : EndpointResolver<E> from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 33,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private endpointResolver : EndpointResolver<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 33,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private endpointResolver : EndpointResolver<E>"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private exchangeConverter : ExchangeConverter from class org.apache.camel.CamelContext to private exchangeConverter : ExchangeConverter from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchangeConverter : ExchangeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private exchangeConverter : ExchangeConverter"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private components : Map<String,Component> from class org.apache.camel.CamelContext to private components : Map<String,Component> from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private components : Map<String,Component>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private components : Map<String,Component>"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private routes : Map<Endpoint<E>,Processor<E>> from class org.apache.camel.CamelContext to private routes : Map<Endpoint<E>,Processor<E>> from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 41,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private routes : Map<Endpoint<E>,Processor<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 41,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private routes : Map<Endpoint<E>,Processor<E>>"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private typeConverter : TypeConverter from class org.apache.camel.CamelContext to private typeConverter : TypeConverter from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private typeConverter : TypeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private typeConverter : TypeConverter"
+}]
+},
+{
+	"type": "Extract Subclass",
+	"description": "Extract Subclass org.apache.camel.impl.DefaultCamelContext from class org.apache.camel.CamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 29,
+		"endLine": 194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 43,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public activateEndpoints() : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 54,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deactivateEndpoints() : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 64,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 84,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getComponent(componentName String) : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 124,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public endpoint(uri String) : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 135,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getEndpointResolver() : EndpointResolver<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 142,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setEndpointResolver(endpointResolver EndpointResolver<E>) : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchangeConverter() : ExchangeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 153,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setExchangeConverter(exchangeConverter ExchangeConverter) : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 157,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTypeConverter() : TypeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setTypeConverter(typeConverter TypeConverter) : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 171,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createEndpointResolver() : EndpointResolver<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 179,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createExchangeConverter() : ExchangeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 187,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createTypeConverter() : TypeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 33,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private endpointResolver : EndpointResolver<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchangeConverter : ExchangeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private components : Map<String,Component>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 41,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private routes : Map<Endpoint<E>,Processor<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private typeConverter : TypeConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 25,
+		"endLine": 97,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.camel.CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 35,
+		"endLine": 223,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.camel.impl.DefaultCamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 117,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public activateEndpoints() : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 128,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public deactivateEndpoints() : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 78,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 61,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getComponent(componentName String) : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 109,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public resolveEndpoint(uri String) : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 164,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getEndpointResolver() : EndpointResolver<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 171,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setEndpointResolver(endpointResolver EndpointResolver<E>) : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 175,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getExchangeConverter() : ExchangeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 182,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setExchangeConverter(exchangeConverter ExchangeConverter) : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 186,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getTypeConverter() : TypeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 193,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setTypeConverter(typeConverter TypeConverter) : void"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 200,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createEndpointResolver() : EndpointResolver<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 208,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createExchangeConverter() : ExchangeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 216,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createTypeConverter() : TypeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 33,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private endpointResolver : EndpointResolver<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private exchangeConverter : ExchangeConverter"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private components : Map<String,Component>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 41,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private routes : Map<Endpoint<E>,Processor<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private typeConverter : TypeConverter"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public routes(builder RouteBuilder<E>) : void from class org.apache.camel.CamelContext to public setRoutes(builder RouteBuilder<E>) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 94,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public routes(builder RouteBuilder<E>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setRoutes(builder RouteBuilder<E>) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public routes(factory RouteFactory) : void from class org.apache.camel.CamelContext to public setRoutes(factory RouteFactory) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 100,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public routes(factory RouteFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 153,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setRoutes(factory RouteFactory) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public endpoint(uri String) : Endpoint<E> from class org.apache.camel.CamelContext to public resolveEndpoint(uri String) : Endpoint<E> from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 124,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public endpoint(uri String) : Endpoint<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 109,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public resolveEndpoint(uri String) : Endpoint<E>"
+}]
+}
+]
+}]
+}

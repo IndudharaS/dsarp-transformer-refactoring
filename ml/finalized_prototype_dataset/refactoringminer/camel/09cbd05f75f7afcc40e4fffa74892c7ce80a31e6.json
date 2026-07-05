@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "09cbd05f75f7afcc40e4fffa74892c7ce80a31e6",
+	"url": "https://github.com/apache/camel/commit/09cbd05f75f7afcc40e4fffa74892c7ce80a31e6",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.camel.Expressions moved and renamed to org.apache.camel.builder.ExpressionBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Expressions.java",
+		"startLine": 19,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.Expressions"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ExpressionBuilder.java",
+		"startLine": 22,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.camel.builder.ExpressionBuilder"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.camel.Predicates moved and renamed to org.apache.camel.builder.PredicateBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Predicates.java",
+		"startLine": 22,
+		"endLine": 132,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.Predicates"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 25,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.camel.builder.PredicateBuilder"
+}]
+}
+]
+}]
+}

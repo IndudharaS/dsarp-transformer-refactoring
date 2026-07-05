@@ -1,0 +1,693 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "3fb58b7b5dc6381b8bc717663ae7d3fd517394cd",
+	"url": "https://github.com/apache/tika/commit/3fb58b7b5dc6381b8bc717663ae7d3fd517394cd",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.ms.PropertiesReaderListener moved to org.apache.tika.parser.microsoft.PropertiesReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ms/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.ms.PropertiesReaderListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PropertiesReaderListener"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.mspowerpoint.FilteredStringWriter moved to org.apache.tika.parser.microsoft.FilteredStringWriter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/FilteredStringWriter.java",
+		"startLine": 22,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.FilteredStringWriter"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/FilteredStringWriter.java",
+		"startLine": 22,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.FilteredStringWriter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.mspowerpoint.PPTConstants moved to org.apache.tika.parser.microsoft.PPTConstants",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTConstants.java",
+		"startLine": 19,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.PPTConstants"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PPTConstants.java",
+		"startLine": 19,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PPTConstants"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.mspowerpoint.Slide moved to org.apache.tika.parser.microsoft.Slide",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/Slide.java",
+		"startLine": 22,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.Slide"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/Slide.java",
+		"startLine": 22,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.Slide"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.mspowerpoint.TextBox moved to org.apache.tika.parser.microsoft.TextBox",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/TextBox.java",
+		"startLine": 19,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.TextBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/TextBox.java",
+		"startLine": 19,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.TextBox"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.msword.PasswordProtectedException moved to org.apache.tika.parser.microsoft.PasswordProtectedException",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/PasswordProtectedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.PasswordProtectedException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PasswordProtectedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PasswordProtectedException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.msword.Word6Extractor moved to org.apache.tika.parser.microsoft.Word6Extractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/Word6Extractor.java",
+		"startLine": 26,
+		"endLine": 230,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.Word6Extractor"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/Word6Extractor.java",
+		"startLine": 25,
+		"endLine": 229,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.Word6Extractor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.msword.WordTextBuffer moved to org.apache.tika.parser.microsoft.WordTextBuffer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/WordTextBuffer.java",
+		"startLine": 18,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.WordTextBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/WordTextBuffer.java",
+		"startLine": 18,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.WordTextBuffer"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.msword.WordTextPiece moved to org.apache.tika.parser.microsoft.WordTextPiece",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/WordTextPiece.java",
+		"startLine": 18,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.WordTextPiece"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/WordTextPiece.java",
+		"startLine": 18,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.WordTextPiece"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.ms.MSParser moved to org.apache.tika.parser.microsoft.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ms/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.ms.MSParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.MSParser"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.mspowerpoint.ContentReaderListener moved to org.apache.tika.parser.microsoft.ContentReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 32,
+		"endLine": 460,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.ContentReaderListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/ContentReaderListener.java",
+		"startLine": 32,
+		"endLine": 460,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.ContentReaderListener"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.msword.FastSavedException moved to org.apache.tika.parser.microsoft.FastSavedException",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/FastSavedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.FastSavedException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/FastSavedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.FastSavedException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.parser.msword.chp.Word6CHPBinTable moved to org.apache.tika.parser.microsoft.Word6CHPBinTable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/chp/Word6CHPBinTable.java",
+		"startLine": 28,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.chp.Word6CHPBinTable"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/Word6CHPBinTable.java",
+		"startLine": 28,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.Word6CHPBinTable"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.tika.parser.msexcel.MsExcelParser moved and renamed to org.apache.tika.parser.microsoft.ExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 27,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msexcel.MsExcelParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/ExcelParser.java",
+		"startLine": 26,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.ExcelParser"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.tika.parser.mspowerpoint.MsPowerPointParser moved and renamed to org.apache.tika.parser.microsoft.PowerPointParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 24,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.MsPowerPointParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PowerPointParser.java",
+		"startLine": 23,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PowerPointParser"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.tika.parser.msword.MsWordParser moved and renamed to org.apache.tika.parser.microsoft.WordParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 36,
+		"endLine": 195,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.MsWordParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/WordParser.java",
+		"startLine": 35,
+		"endLine": 194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.WordParser"
+}]
+},
+{
+	"type": "Merge Package",
+	"description": "Merge Package [org.apache.tika.parser.ms, org.apache.tika.parser.mspowerpoint, org.apache.tika.parser.msword, org.apache.tika.parser.msword.chp] to org.apache.tika.parser.microsoft",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ms/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.ms.MSParser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ms/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.ms.PropertiesReaderListener"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/ContentReaderListener.java",
+		"startLine": 32,
+		"endLine": 460,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.ContentReaderListener"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/FilteredStringWriter.java",
+		"startLine": 22,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.FilteredStringWriter"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/PPTConstants.java",
+		"startLine": 19,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.PPTConstants"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/Slide.java",
+		"startLine": 22,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.Slide"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/TextBox.java",
+		"startLine": 19,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.TextBox"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/FastSavedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.FastSavedException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/PasswordProtectedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.PasswordProtectedException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/Word6Extractor.java",
+		"startLine": 26,
+		"endLine": 230,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.Word6Extractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/WordTextBuffer.java",
+		"startLine": 18,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.WordTextBuffer"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/WordTextPiece.java",
+		"startLine": 18,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.WordTextPiece"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/chp/Word6CHPBinTable.java",
+		"startLine": 28,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.chp.Word6CHPBinTable"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.MSParser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PropertiesReaderListener"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/ContentReaderListener.java",
+		"startLine": 32,
+		"endLine": 460,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.ContentReaderListener"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/FilteredStringWriter.java",
+		"startLine": 22,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.FilteredStringWriter"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PPTConstants.java",
+		"startLine": 19,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PPTConstants"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/Slide.java",
+		"startLine": 22,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.Slide"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/TextBox.java",
+		"startLine": 19,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.TextBox"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/FastSavedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.FastSavedException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PasswordProtectedException.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PasswordProtectedException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/Word6Extractor.java",
+		"startLine": 25,
+		"endLine": 229,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.Word6Extractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/WordTextBuffer.java",
+		"startLine": 18,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.WordTextBuffer"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/WordTextPiece.java",
+		"startLine": 18,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.WordTextPiece"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/Word6CHPBinTable.java",
+		"startLine": 28,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.Word6CHPBinTable"
+}]
+},
+{
+	"type": "Merge Package",
+	"description": "Merge Package [org.apache.tika.parser.msexcel, org.apache.tika.parser.mspowerpoint, org.apache.tika.parser.msword] to org.apache.tika.parser.microsoft",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 27,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msexcel.MsExcelParser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 24,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.mspowerpoint.MsPowerPointParser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 36,
+		"endLine": 195,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.parser.msword.MsWordParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/ExcelParser.java",
+		"startLine": 26,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.ExcelParser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/PowerPointParser.java",
+		"startLine": 23,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.PowerPointParser"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/microsoft/WordParser.java",
+		"startLine": 35,
+		"endLine": 194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.microsoft.WordParser"
+}]
+}
+]
+}]
+}

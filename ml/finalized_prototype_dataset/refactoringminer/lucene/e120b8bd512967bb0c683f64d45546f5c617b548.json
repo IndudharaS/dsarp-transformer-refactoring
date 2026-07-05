@@ -1,0 +1,285 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/lucene.git",
+	"sha1": "e120b8bd512967bb0c683f64d45546f5c617b548",
+	"url": "https://github.com/apache/lucene/commit/e120b8bd512967bb0c683f64d45546f5c617b548",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.DeleteFiles moved to org.apache.lucene.demo.DeleteFiles",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/DeleteFiles.java",
+		"startLine": 64,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.DeleteFiles"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/DeleteFiles.java",
+		"startLine": 64,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.DeleteFiles"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.FileDocument moved to org.apache.lucene.demo.FileDocument",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/FileDocument.java",
+		"startLine": 67,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.FileDocument"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/FileDocument.java",
+		"startLine": 67,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.FileDocument"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.HTMLDocument moved to org.apache.lucene.demo.HTMLDocument",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/HTMLDocument.java",
+		"startLine": 61,
+		"endLine": 120,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLDocument"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/HTMLDocument.java",
+		"startLine": 61,
+		"endLine": 120,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.HTMLDocument"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.HTMLParser.ParserThread moved to org.apache.lucene.demo.html.ParserThread",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/HTMLParser/ParserThread.java",
+		"startLine": 59,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLParser.ParserThread"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/html/ParserThread.java",
+		"startLine": 59,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.html.ParserThread"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.HTMLParser.Test moved to org.apache.lucene.demo.html.Test",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/HTMLParser/Test.java",
+		"startLine": 59,
+		"endLine": 81,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLParser.Test"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/html/Test.java",
+		"startLine": 59,
+		"endLine": 81,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.html.Test"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.IndexFiles moved to org.apache.lucene.demo.IndexFiles",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/IndexFiles.java",
+		"startLine": 63,
+		"endLine": 98,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.IndexFiles"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/IndexFiles.java",
+		"startLine": 63,
+		"endLine": 96,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.IndexFiles"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.IndexHTML moved to org.apache.lucene.demo.IndexHTML",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/IndexHTML.java",
+		"startLine": 66,
+		"endLine": 195,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.IndexHTML"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/IndexHTML.java",
+		"startLine": 66,
+		"endLine": 194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.IndexHTML"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.SearchFiles moved to org.apache.lucene.demo.SearchFiles",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/SearchFiles.java",
+		"startLine": 70,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.SearchFiles"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/SearchFiles.java",
+		"startLine": 70,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.SearchFiles"
+}]
+},
+{
+	"type": "Move Package",
+	"description": "Move Package org.apache.lucene.HTMLParser to org.apache.lucene.demo.html",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/HTMLParser/Entities.java",
+		"startLine": 59,
+		"endLine": 365,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLParser.Entities"
+}, {
+		"filePath": "src/demo/org/apache/lucene/HTMLParser/ParserThread.java",
+		"startLine": 59,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLParser.ParserThread"
+}, {
+		"filePath": "src/demo/org/apache/lucene/HTMLParser/Test.java",
+		"startLine": 59,
+		"endLine": 81,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLParser.Test"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/html/Entities.java",
+		"startLine": 59,
+		"endLine": 365,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.html.Entities"
+}, {
+		"filePath": "src/demo/org/apache/lucene/demo/html/ParserThread.java",
+		"startLine": 59,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.html.ParserThread"
+}, {
+		"filePath": "src/demo/org/apache/lucene/demo/html/Test.java",
+		"startLine": 59,
+		"endLine": 81,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.html.Test"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.lucene.HTMLParser.Entities moved to org.apache.lucene.demo.html.Entities",
+	"leftSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/HTMLParser/Entities.java",
+		"startLine": 59,
+		"endLine": 365,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.HTMLParser.Entities"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/demo/org/apache/lucene/demo/html/Entities.java",
+		"startLine": 59,
+		"endLine": 365,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.lucene.demo.html.Entities"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "b8d28505c84baabe75edfba0a43f3b2f06e19c13",
+	"url": "https://github.com/apache/camel/commit/b8d28505c84baabe75edfba0a43f3b2f06e19c13",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type factory : Callable<Component> to factory : Callable<Component<E>> in method public getOrCreateComponent(componentName String, factory Callable<Component<E>>) : Component from class org.apache.camel.CamelContainer",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 62,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "factory : Callable<Component>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 6,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 62,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "factory : Callable<Component<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 6,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

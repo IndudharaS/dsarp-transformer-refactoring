@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "aa24907ba5aa1594c74a3208e511fb75160be9d1",
+	"url": "https://github.com/apache/camel/commit/aa24907ba5aa1594c74a3208e511fb75160be9d1",
+	"refactorings": []
+}]
+}

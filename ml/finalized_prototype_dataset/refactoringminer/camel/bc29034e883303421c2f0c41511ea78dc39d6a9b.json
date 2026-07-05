@@ -1,0 +1,2145 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "bc29034e883303421c2f0c41511ea78dc39d6a9b",
+	"url": "https://github.com/apache/camel/commit/bc29034e883303421c2f0c41511ea78dc39d6a9b",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.camel.builder.ChoicePredicateBuilder renamed to org.apache.camel.builder.WhenBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoicePredicateBuilder.java",
+		"startLine": 24,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.builder.ChoicePredicateBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/WhenBuilder.java",
+		"startLine": 24,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.camel.builder.WhenBuilder"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.camel.builder.ConfiguredDestinationBuilder renamed to org.apache.camel.builder.ToBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ConfiguredDestinationBuilder.java",
+		"startLine": 25,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.builder.ConfiguredDestinationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 25,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.camel.builder.ToBuilder"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.camel.builder.PredicateBuilder renamed to org.apache.camel.builder.FilterBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 25,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.builder.PredicateBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 25,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.camel.builder.FilterBuilder"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.camel.builder.ProcessorBuilder renamed to org.apache.camel.builder.ProcessorFactory",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ProcessorBuilder.java",
+		"startLine": 22,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.builder.ProcessorBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ProcessorFactory.java",
+		"startLine": 22,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.camel.builder.ProcessorFactory"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.camel.builder.DestinationBuilder renamed to org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 29,
+		"endLine": 197,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.builder.DestinationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 29,
+		"endLine": 197,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.camel.builder.FromBuilder"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type parent : DestinationBuilder<E> to parent : FromBuilder<E> in class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 41,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "parent : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type predicateBuilders : List<ChoicePredicateBuilder<E>> to predicateBuilders : List<WhenBuilder<E>> in class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 45,
+		"endColumn": 107,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "predicateBuilders : List<ChoicePredicateBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 34,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "predicateBuilders : List<WhenBuilder<E>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type otherwise : DestinationBuilder<E> to otherwise : FromBuilder<E> in class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 35,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "otherwise : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "otherwise : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type predicateBuilder : ChoicePredicateBuilder<E> to predicateBuilder : WhenBuilder<E> in method public createProcessor() : Processor<E> from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 14,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "predicateBuilder : ChoicePredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 14,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "predicateBuilder : WhenBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : ChoicePredicateBuilder<E> to answer : WhenBuilder<E> in method public when(predicate Predicate<E>) : WhenBuilder<E> from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 35,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : ChoicePredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 24,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : WhenBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ChoicePredicateBuilder<E> to WhenBuilder<E> in method public when(predicate Predicate<E>) : WhenBuilder<E> from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 12,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ChoicePredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 42,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public when(predicate Predicate<E>) : ChoicePredicateBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "WhenBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 42,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public when(predicate Predicate<E>) : WhenBuilder<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type DestinationBuilder<E> to FromBuilder<E> in method public otherwise() : FromBuilder<E> from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public otherwise() : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public otherwise() : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<ChoicePredicateBuilder<E>> to List<WhenBuilder<E>> in method public getPredicateBuilders() : List<WhenBuilder<E>> from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 12,
+		"endColumn": 43,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<ChoicePredicateBuilder<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPredicateBuilders() : List<ChoicePredicateBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<WhenBuilder<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getPredicateBuilders() : List<WhenBuilder<E>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type DestinationBuilder<E> to FromBuilder<E> in method public getOtherwise() : FromBuilder<E> from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 62,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOtherwise() : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 62,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getOtherwise() : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parent : DestinationBuilder<E> to parent : FromBuilder<E> in method public ChoiceBuilder(parent FromBuilder<E>) from class org.apache.camel.builder.ChoiceBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 26,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parent : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 26,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ChoiceBuilder.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type parent : DestinationBuilder<E> to parent : FromBuilder<E> in class org.apache.camel.builder.InterceptorBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 38,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "parent : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 31,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type target : DestinationBuilder<E> to target : FromBuilder<E> in class org.apache.camel.builder.InterceptorBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 32,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "target : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "target : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type DestinationBuilder<E> to FromBuilder<E> in method public target() : FromBuilder<E> from class org.apache.camel.builder.InterceptorBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public target() : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public target() : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parent : DestinationBuilder<E> to parent : FromBuilder<E> in method public InterceptorBuilder(parent FromBuilder<E>) from class org.apache.camel.builder.InterceptorBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parent : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 28,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/InterceptorBuilder.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter destinationBuilder : DestinationBuilder<E> to fromBuilder : FromBuilder<E> in method public RecipientListBuilder(fromBuilder FromBuilder<E>, valueBuilder ValueBuilder<E>) from class org.apache.camel.builder.RecipientListBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RecipientListBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 33,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destinationBuilder : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RecipientListBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fromBuilder : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type destinationBuilder : DestinationBuilder<E> to fromBuilder : FromBuilder<E> in method public RecipientListBuilder(fromBuilder FromBuilder<E>, valueBuilder ValueBuilder<E>) from class org.apache.camel.builder.RecipientListBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RecipientListBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 33,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destinationBuilder : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RecipientListBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fromBuilder : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type destinationBuilder : DestinationBuilder<E> to fromBuilder : FromBuilder<E> in method protected populateRouteMap(routeMap Map<Endpoint<E>,Processor<E>>) : void from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 14,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destinationBuilder : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 17,
+		"endColumn": 122,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 117,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 14,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fromBuilder : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 17,
+		"endColumn": 115,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 115,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable destinationBuilder : DestinationBuilder<E> to fromBuilder : FromBuilder<E> in method protected populateRouteMap(routeMap Map<Endpoint<E>,Processor<E>>) : void from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 14,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destinationBuilder : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 17,
+		"endColumn": 122,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 117,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 14,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fromBuilder : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 17,
+		"endColumn": 115,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 115,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type DestinationBuilder<E> to FromBuilder<E> in method public from(uri String) : FromBuilder<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public from(uri String) : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public from(uri String) : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : DestinationBuilder<E> to answer : FromBuilder<E> in method public from(endpoint Endpoint<E>) : FromBuilder<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 31,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 24,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type DestinationBuilder<E> to FromBuilder<E> in method public from(endpoint Endpoint<E>) : FromBuilder<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public from(endpoint Endpoint<E>) : DestinationBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 67,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public from(endpoint Endpoint<E>) : FromBuilder<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<DestinationBuilder<E>> to List<FromBuilder<E>> in method public getDestinationBuilders() : List<FromBuilder<E>> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<DestinationBuilder<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 98,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDestinationBuilders() : List<DestinationBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<FromBuilder<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 96,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getDestinationBuilders() : List<FromBuilder<E>>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute destinationBuilders : List<DestinationBuilder<E>> to fromBuilders : List<FromBuilder<E>> in class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 41,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "destinationBuilders : List<DestinationBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 34,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "fromBuilders : List<FromBuilder<E>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type destinationBuilders : List<DestinationBuilder<E>> to fromBuilders : List<FromBuilder<E>> in class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 41,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "destinationBuilders : List<DestinationBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 34,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "fromBuilders : List<FromBuilder<E>>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parent : DestinationBuilder<E> to parent : FromBuilder<E> in method public ToBuilder(parent FromBuilder<E>, endpoint Endpoint<E>) from class org.apache.camel.builder.ToBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ConfiguredDestinationBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 41,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parent : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ConfiguredDestinationBuilder.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type builder : DestinationBuilder<E> to builder : FromBuilder<E> in method public FilterBuilder(builder FromBuilder<E>, predicate Predicate<E>) from class org.apache.camel.builder.FilterBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 29,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "builder : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 26,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type PredicateBuilder<E> to FilterBuilder<E> in method public and(predicate Predicate<E>) : FilterBuilder<E> from class org.apache.camel.builder.FilterBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public and(predicate Predicate<E>) : PredicateBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FilterBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public and(predicate Predicate<E>) : FilterBuilder<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type PredicateBuilder<E> to FilterBuilder<E> in method public or(predicate Predicate<E>) : FilterBuilder<E> from class org.apache.camel.builder.FilterBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/PredicateBuilder.java",
+		"startLine": 44,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public or(predicate Predicate<E>) : PredicateBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FilterBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FilterBuilder.java",
+		"startLine": 44,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public or(predicate Predicate<E>) : FilterBuilder<E>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parent : DestinationBuilder<E> to parent : FromBuilder<E> in method public FromBuilder(parent FromBuilder<E>) from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parent : DestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ProcessorBuilder<E> to ProcessorFactory<E> in method public to(uri String) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 55,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public to(uri String) : ProcessorBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 55,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public to(uri String) : ProcessorFactory<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : ConfiguredDestinationBuilder<E> to answer : ToBuilder<E> in method public to(endpoint Endpoint<E>) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 41,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : ConfiguredDestinationBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 22,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : ToBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ProcessorBuilder<E> to ProcessorFactory<E> in method public to(endpoint Endpoint<E>) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 62,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public to(endpoint Endpoint<E>) : ProcessorBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 62,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public to(endpoint Endpoint<E>) : ProcessorFactory<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : ProcessorBuilder<E> to answer : ProcessorFactory<E> in method public to(uris String...) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 29,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 29,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ProcessorBuilder<E> to ProcessorFactory<E> in method public to(uris String...) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 72,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public to(uris String...) : ProcessorBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 72,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public to(uris String...) : ProcessorFactory<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : ProcessorBuilder<E> to answer : ProcessorFactory<E> in method public to(endpoints Endpoint<E>...) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 29,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 29,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ProcessorBuilder<E> to ProcessorFactory<E> in method public to(endpoints Endpoint<E>...) : ProcessorFactory<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 83,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public to(endpoints Endpoint<E>...) : ProcessorBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 83,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public to(endpoints Endpoint<E>...) : ProcessorFactory<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ProcessorBuilder<E> to ConstantProcessorBuilder<E> in method public process(processor Processor<E>) : ConstantProcessorBuilder<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 95,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public process(processor Processor<E>) : ProcessorBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConstantProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 95,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public process(processor Processor<E>) : ConstantProcessorBuilder<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : PredicateBuilder<E> to answer : FilterBuilder<E> in method public filter(predicate Predicate<E>) : FilterBuilder<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 29,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : PredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 26,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : FilterBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type PredicateBuilder<E> to FilterBuilder<E> in method public filter(predicate Predicate<E>) : FilterBuilder<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PredicateBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 106,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public filter(predicate Predicate<E>) : PredicateBuilder<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FilterBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 106,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public filter(predicate Predicate<E>) : FilterBuilder<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type processBuilder : ProcessorBuilder<E> to processFactory : ProcessorFactory<E> in method public createProcessor() : Processor<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 14,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processBuilder : ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 17,
+		"endColumn": 114,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 163,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 14,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processFactory : ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 17,
+		"endColumn": 114,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 163,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable processBuilder : ProcessorBuilder<E> to processFactory : ProcessorFactory<E> in method public createProcessor() : Processor<E> from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 14,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processBuilder : ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 17,
+		"endColumn": 114,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 163,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 14,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "processFactory : ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 17,
+		"endColumn": 114,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 163,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processBuilder : ProcessorBuilder<E> to processFactory : ProcessorFactory<E> in method public addProcessBuilder(processFactory ProcessorFactory<E>) : void from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processBuilder : ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processFactory : ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter processBuilder : ProcessorBuilder<E> to processFactory : ProcessorFactory<E> in method public addProcessBuilder(processFactory ProcessorFactory<E>) : void from class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processBuilder : ProcessorBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "processFactory : ProcessorFactory<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute processBuilders : List<ProcessorBuilder<E>> to processFactories : List<ProcessorFactory<E>> in class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 39,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "processBuilders : List<ProcessorBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 39,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "processFactories : List<ProcessorFactory<E>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type processBuilders : List<ProcessorBuilder<E>> to processFactories : List<ProcessorFactory<E>> in class org.apache.camel.builder.FromBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/DestinationBuilder.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 39,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "processBuilders : List<ProcessorBuilder<E>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/FromBuilder.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 39,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "processFactories : List<ProcessorFactory<E>>"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,21 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "9c15e67cde9c4d17f2dfba9c9a3fc3a3dbb9d401",
+	"url": "https://github.com/apache/camel/commit/9c15e67cde9c4d17f2dfba9c9a3fc3a3dbb9d401",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder camel/camel-core to camel-core",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder camel/camel-jms to camel-jms",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+}]
+}

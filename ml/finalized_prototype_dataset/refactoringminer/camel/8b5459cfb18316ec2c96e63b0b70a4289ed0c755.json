@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "8b5459cfb18316ec2c96e63b0b70a4289ed0c755",
+	"url": "https://github.com/apache/camel/commit/8b5459cfb18316ec2c96e63b0b70a4289ed0c755",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public send(exchange E) : void renamed to public onExchange(exchange E) : void in class org.apache.camel.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(exchange E) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public onExchange(exchange E) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public send(exchange JmsExchange) : void renamed to public onExchange(exchange JmsExchange) : void in class org.apache.camel.jms.JmsEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 67,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(exchange JmsExchange) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 67,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public onExchange(exchange JmsExchange) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public send(exchange E) : void renamed to public onExchange(exchange E) : void in class org.apache.camel.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Endpoint.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(exchange E) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Endpoint.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public onExchange(exchange E) : void"
+}]
+}
+]
+}]
+}

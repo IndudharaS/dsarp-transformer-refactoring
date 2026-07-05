@@ -1,0 +1,381 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "c58bccbd9df2b643661948f4dc12d3c538e69305",
+	"url": "https://github.com/apache/camel/commit/c58bccbd9df2b643661948f4dc12d3c538e69305",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected createExchangeXPathExpression() : ExchangeXPathExpression<E> extracted from public createExpression() : Expression<E> in class org.apache.camel.builder.xpath.XPathBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 57,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public createExpression() : Expression<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 87,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 58,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 213,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createExchangeXPathExpression() : ExchangeXPathExpression<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 13,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 13,
+		"endColumn": 87,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 214,
+		"endLine": 221,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 219,
+		"endLine": 221,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 61,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public createExpression() : Expression<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createExchangeXPathExpression()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testXPath() : void renamed to public testXPathExpressions() : void in class org.apache.camel.builder.xpath.XPathTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testXPath() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 39,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testXPathExpressions() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected createExchange(xml String) : Exchange extracted from protected assertExpression(expression Expression, expected String, xml String) : Object in class org.apache.camel.builder.xpath.XPathTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 81,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected assertExpression(expression Expression, expected String, xml String) : Object"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 111,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createExchange(xml String) : Exchange"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 89,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected assertExpression(expression Expression, expected String, xml String) : Object"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 29,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createExchange(xml)"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/builder/xpath/XPathTest.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface org.apache.camel.builder.ExpressionFactory from classes [org.apache.camel.builder.xpath.XPathBuilder]",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 35,
+		"endLine": 220,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.builder.xpath.XPathBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/xpath/XPathBuilder.java",
+		"startLine": 39,
+		"endLine": 234,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.builder.xpath.XPathBuilder"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ExpressionFactory.java",
+		"startLine": 23,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.camel.builder.ExpressionFactory"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public evaluate(exchange E) : boolean renamed to public matches(exchange E) : boolean in class org.apache.camel.Predicate",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Predicate.java",
+		"startLine": 26,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluate(exchange E) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Predicate.java",
+		"startLine": 26,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public matches(exchange E) : boolean"
+}]
+}
+]
+}]
+}

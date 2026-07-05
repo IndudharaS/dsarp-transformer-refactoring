@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/lucene.git",
+	"sha1": "4e72b89a909aa25ba4ca764e43f7d186fa97a20a",
+	"url": "https://github.com/apache/lucene/commit/4e72b89a909aa25ba4ca764e43f7d186fa97a20a",
+	"refactorings": []
+}]
+}

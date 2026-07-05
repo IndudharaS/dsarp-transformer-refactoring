@@ -1,0 +1,243 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "7173ec91ea19aa42215d42b089bdd87e847f9d6e",
+	"url": "https://github.com/apache/camel/commit/7173ec91ea19aa42215d42b089bdd87e847f9d6e",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected createHeaders() : Map<String,Object> extracted from public getHeaders() : Map<String,Object> in class org.apache.camel.impl.DefaultMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 62,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createHeaders() : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultMessage.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createHeaders()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getHeaders() : Map<String,Object> renamed to protected createHeaders() : Map<String,Object> in class org.apache.camel.component.jms.JmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 93,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 85,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected createHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable answer : Object in method public getHeader(name String) : Object from class org.apache.camel.component.jms.JmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "answer : Object"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : Map<String,Object> to answer : HashMap<String,Object> in method protected createHeaders() : Map<String,Object> from class org.apache.camel.component.jms.JmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 33,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : Map<String,Object>"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 33,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : HashMap<String,Object>"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method protected createHeaders() : Map<String,Object> from class org.apache.camel.component.jms.JmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 93,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 85,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected createHeaders() : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected createHeaders() : Map<String,Object> from class org.apache.camel.component.jms.JmsMessage",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 93,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeaders() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/component/jms/JmsMessage.java",
+		"startLine": 85,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected createHeaders() : Map<String,Object>"
+}]
+}
+]
+}]
+}

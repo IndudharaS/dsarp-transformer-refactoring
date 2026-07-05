@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "0424392709e1a8c0f6674e8621db9874c0e395de",
+	"url": "https://github.com/apache/camel/commit/0424392709e1a8c0f6674e8621db9874c0e395de",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public getHeader(name String) : Object renamed to public getProperty(name String) : Object in class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 66,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 66,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getProperty(name String) : Object"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setHeader(name String, value Object) : void renamed to public setProperty(name String, value Object) : void in class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setProperty(name String, value Object) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getHeader(name String) : Object renamed to public getProperty(name String) : Object in class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 41,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 41,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getProperty(name String) : Object"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setHeader(name String, value Object) : void renamed to public setProperty(name String, value Object) : void in class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 49,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setHeader(name String, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 49,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setProperty(name String, value Object) : void"
+}]
+}
+]
+}]
+}
