@@ -1,0 +1,339 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "7bdb1c8dea70014b3528736755868c526dfcf834",
+	"url": "https://github.com/apache/tika/commit/7bdb1c8dea70014b3528736755868c526dfcf834",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type resultText : String to resultText : StringBuilder in method public extractText(input InputStream) : String from class org.apache.tika.parser.msexcel.ExcelExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resultText : String"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 19,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "resultText : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/ExcelExtractor.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable extractor : MSExtractor in method protected parse(stream InputStream, contents Iterable<Content>) : String from class org.apache.tika.parser.msexcel.MsExcelParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 16,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "extractor : MSExtractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msexcel/MsExcelParser.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type extrator : PPTExtractor to extractor : MSExtractor in method protected parse(stream InputStream, contents Iterable<Content>) : String from class org.apache.tika.parser.mspowerpoint.MsPowerPointParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "extrator : PPTExtractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 16,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "extractor : MSExtractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable extrator : PPTExtractor to extractor : MSExtractor in method protected parse(stream InputStream, contents Iterable<Content>) : String from class org.apache.tika.parser.mspowerpoint.MsPowerPointParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "extrator : PPTExtractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 16,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "extractor : MSExtractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/mspowerpoint/MsPowerPointParser.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable extractor : MSExtractor in method protected parse(stream InputStream, contents Iterable<Content>) : String from class org.apache.tika.parser.msword.MsWordParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "extractor : MSExtractor"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/msword/MsWordParser.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public extract(input InputStream) : void renamed to public extractProperties(input InputStream) : void in class org.apache.tika.utils.MSExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 54,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public extract(input InputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MSExtractor.java",
+		"startLine": 53,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public extractProperties(input InputStream) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private copyInputStream(in InputStream, out OutputStream) : void renamed to private saveInputStreamInFile(in InputStream, out OutputStream) : void in class org.apache.tika.utils.Utils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/Utils.java",
+		"startLine": 130,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private copyInputStream(in InputStream, out OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/Utils.java",
+		"startLine": 131,
+		"endLine": 141,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private saveInputStreamInFile(in InputStream, out OutputStream) : void"
+}]
+}
+]
+}]
+}

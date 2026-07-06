@@ -1,0 +1,207 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "2b86daf8815f3c8d974f887e4cc064b9159db595",
+	"url": "https://github.com/apache/tika/commit/2b86daf8815f3c8d974f887e4cc064b9159db595",
+	"refactorings": [{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type MimeInfoException in method public getParser(file File, tc LiusConfig) : Parser from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "MimeInfoException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 40,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(file File, tc LiusConfig) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 39,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getParser(file File, tc LiusConfig) : Parser"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type MimeInfoException in method public getParser(str String, tc LiusConfig) : Parser from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "MimeInfoException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 75,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(str String, tc LiusConfig) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 74,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getParser(str String, tc LiusConfig) : Parser"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type MimeInfoException in method public getParser(str String, tcPath String) : Parser from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "MimeInfoException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(str String, tcPath String) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getParser(str String, tcPath String) : Parser"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type MimeInfoException in method public getParser(file File, tcPath String) : Parser from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "MimeInfoException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 92,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(file File, tcPath String) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 91,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getParser(file File, tcPath String) : Parser"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type MimeInfoException in method public getMimeType(file File) : String from class org.apache.tika.utils.MimeTypesUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MimeTypesUtils.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 56,
+		"endColumn": 73,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "MimeInfoException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/MimeTypesUtils.java",
+		"startLine": 32,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMimeType(file File) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MimeTypesUtils.java",
+		"startLine": 28,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getMimeType(file File) : String"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type IOException in method public getMimeType(file File) : String from class org.apache.tika.utils.MimeTypesUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MimeTypesUtils.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/MimeTypesUtils.java",
+		"startLine": 32,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMimeType(file File) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/MimeTypesUtils.java",
+		"startLine": 28,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getMimeType(file File) : String"
+}]
+}
+]
+}]
+}

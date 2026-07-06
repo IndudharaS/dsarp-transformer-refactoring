@@ -1,0 +1,210 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "b417973d391382a96e26e6c50751b9b24f85b239",
+	"url": "https://github.com/apache/ant/commit/b417973d391382a96e26e6c50751b9b24f85b239",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable msg : String in method public messageLogged(event BuildEvent) : void from class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "msg : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type be : BuildException to exc : RuntimeException in method private runBuild() : void from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "be : BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 6,
+		"endColumn": 15,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 15,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "exc : RuntimeException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type be : BuildException to err : Error in method private runBuild() : void from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "be : BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "err : Error"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable be : BuildException to exc : RuntimeException in method private runBuild() : void from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "be : BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 6,
+		"endColumn": 15,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 15,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "exc : RuntimeException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable be : BuildException to err : Error in method private runBuild() : void from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "be : BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "err : Error"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

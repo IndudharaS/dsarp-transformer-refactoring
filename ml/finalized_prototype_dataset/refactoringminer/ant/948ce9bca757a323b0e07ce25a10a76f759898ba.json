@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "948ce9bca757a323b0e07ce25a10a76f759898ba",
+	"url": "https://github.com/apache/ant/commit/948ce9bca757a323b0e07ce25a10a76f759898ba",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type BuildException in method protected Main(args String[]) from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 109,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Main(args String[])"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 42,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 109,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "protected Main(args String[])"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type BuildException in method private runBuild() : void from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 215,
+		"endLine": 295,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private runBuild() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 36,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 215,
+		"endLine": 295,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "private runBuild() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type BuildException in method public init() : void from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 113,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "BuildException"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 113,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public init() : void"
+}]
+}
+]
+}]
+}

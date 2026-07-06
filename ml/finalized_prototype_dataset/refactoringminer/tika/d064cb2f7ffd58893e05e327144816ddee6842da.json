@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "d064cb2f7ffd58893e05e327144816ddee6842da",
+	"url": "https://github.com/apache/tika/commit/d064cb2f7ffd58893e05e327144816ddee6842da",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.ms.MSParser moved to org.apache.tika.parser.ms.MSParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.ms.MSParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ms/MSParser.java",
+		"startLine": 33,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.ms.MSParser"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.tika.ms.PropertiesReaderListener moved to org.apache.tika.parser.ms.PropertiesReaderListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/ms/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.ms.PropertiesReaderListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ms/PropertiesReaderListener.java",
+		"startLine": 25,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.tika.parser.ms.PropertiesReaderListener"
+}]
+}
+]
+}]
+}

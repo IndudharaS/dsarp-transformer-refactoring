@@ -1,0 +1,660 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "1ba5087df429abe38dd22fe5c9ddbc343280f0ae",
+	"url": "https://github.com/apache/ant/commit/1ba5087df429abe38dd22fe5c9ddbc343280f0ae",
+	"refactorings": [{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private msgOutputLevel : int from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 24,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private msgOutputLevel : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private msgOutputLevel : int"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private buildFile : File from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 25,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private buildFile : File"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private buildFile : File"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private out : PrintStream from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 32,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private out : PrintStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private out : PrintStream"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private targets : Vector from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 27,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private targets : Vector"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private targets : Vector"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private definedProps : Properties from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 31,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private definedProps : Properties"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 24,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private definedProps : Properties"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private runBuild() : void from class org.apache.tools.ant.Main",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 196,
+		"endLine": 271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private runBuild() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Main.java",
+		"startLine": 215,
+		"endLine": 295,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private runBuild() : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute t : Target to currentTarget : Target in method private runTarget(target String, targets Hashtable) : void from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "t : Target"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 681,
+		"endLine": 681,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 676,
+		"endLine": 679,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 22,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "currentTarget : Target"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 696,
+		"endLine": 696,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 704,
+		"endLine": 704,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 697,
+		"endLine": 700,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private out : PrintStream from class org.apache.tools.ant.Project to private out : PrintStream from class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 25,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private out : PrintStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 25,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private out : PrintStream"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private msgOutputLevel : int from class org.apache.tools.ant.Project to private msgOutputLevel : int from class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private msgOutputLevel : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private msgOutputLevel : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.apache.tools.ant.DefaultLogger from class org.apache.tools.ant.Project",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 61,
+		"endLine": 807,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tools.ant.Project"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 25,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private out : PrintStream"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private msgOutputLevel : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 61,
+		"endLine": 907,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.tools.ant.Project"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 59,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.tools.ant.DefaultLogger"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 25,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private out : PrintStream"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private msgOutputLevel : int"
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from public log(msg String, msgLevel int) : void in class org.apache.tools.ant.Project to public targetStarted(event BuildEvent) : void in class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public log(msg String, msgLevel int) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 168,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 168,
+		"endLine": 170,
+		"startColumn": 41,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public targetStarted(event BuildEvent) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from public log(msg String, tag String, msgLevel int) : void in class org.apache.tools.ant.Project to public targetStarted(event BuildEvent) : void in class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 173,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public log(msg String, tag String, msgLevel int) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 41,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public targetStarted(event BuildEvent) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from public log(msg String, msgLevel int) : void in class org.apache.tools.ant.Project to public messageLogged(event BuildEvent) : void in class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public log(msg String, msgLevel int) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 168,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 168,
+		"endLine": 170,
+		"startColumn": 41,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 92,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public messageLogged(event BuildEvent) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 95,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 95,
+		"endLine": 109,
+		"startColumn": 52,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from public log(msg String, tag String, msgLevel int) : void in class org.apache.tools.ant.Project to public messageLogged(event BuildEvent) : void in class org.apache.tools.ant.DefaultLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 173,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public log(msg String, tag String, msgLevel int) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/Project.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 41,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 92,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public messageLogged(event BuildEvent) : void"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 95,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DefaultLogger.java",
+		"startLine": 95,
+		"endLine": 109,
+		"startColumn": 52,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

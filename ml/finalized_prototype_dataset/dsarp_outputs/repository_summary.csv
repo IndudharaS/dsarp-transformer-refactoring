@@ -1,0 +1,6 @@
+repository,url,path,commits
+tika,https://github.com/apache/tika.git,C:\dsarp_work\repositories\tika,10486
+maven,https://github.com/apache/maven.git,C:\dsarp_work\repositories\maven,16165
+camel,https://github.com/apache/camel.git,C:\dsarp_work\repositories\camel,81762
+ant,https://github.com/apache/ant.git,C:\dsarp_work\repositories\ant,15118
+lucene,https://github.com/apache/lucene.git,C:\dsarp_work\repositories\lucene,39324

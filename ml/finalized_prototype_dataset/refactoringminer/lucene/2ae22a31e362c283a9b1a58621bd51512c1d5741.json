@@ -1,0 +1,351 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/lucene.git",
+	"sha1": "2ae22a31e362c283a9b1a58621bd51512c1d5741",
+	"url": "https://github.com/apache/lucene/commit/2ae22a31e362c283a9b1a58621bd51512c1d5741",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.lucene.analysis.NullAnalyzer renamed to org.apache.lucene.analysis.WhitespaceAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullAnalyzer.java",
+		"startLine": 59,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.analysis.NullAnalyzer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/WhitespaceAnalyzer.java",
+		"startLine": 59,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.lucene.analysis.WhitespaceAnalyzer"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.lucene.analysis.NullTokenizer renamed to org.apache.lucene.analysis.CharTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 59,
+		"endLine": 117,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.lucene.analysis.NullTokenizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 59,
+		"endLine": 120,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.lucene.analysis.CharTokenizer"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier final in class org.apache.lucene.analysis.LetterTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/LetterTokenizer.java",
+		"startLine": 59,
+		"endLine": 114,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.lucene.analysis.LetterTokenizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/LetterTokenizer.java",
+		"startLine": 59,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.apache.lucene.analysis.LetterTokenizer"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class org.apache.lucene.analysis.CharTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 59,
+		"endLine": 117,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.lucene.analysis.NullTokenizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 59,
+		"endLine": 120,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "org.apache.lucene.analysis.CharTokenizer"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier final in class org.apache.lucene.analysis.NullTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 59,
+		"endLine": 117,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.lucene.analysis.NullTokenizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 59,
+		"endLine": 120,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.apache.lucene.analysis.CharTokenizer"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected normalize(c char) : char extracted from public next() : Token in class org.apache.lucene.analysis.CharTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 79,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public next() : Token"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 77,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected normalize(c char) : char"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 38,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 82,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public next() : Token"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 21,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "normalize(c)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter in : Reader to input : Reader in method public CharTokenizer(input Reader) from class org.apache.lucene.analysis.CharTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "in : Reader"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "input : Reader"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected isTokenChar(c char) : boolean extracted from public next() : Token in class org.apache.lucene.analysis.NullTokenizer & moved to class org.apache.lucene.analysis.WhitespaceTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 79,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public next() : Token"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 11,
+		"endColumn": 36,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 11,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/WhitespaceTokenizer.java",
+		"startLine": 68,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected isTokenChar(c char) : boolean"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/WhitespaceTokenizer.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/WhitespaceTokenizer.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 12,
+		"endColumn": 38,
+		"codeElementType": "PREFIX_EXPRESSION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 82,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public next() : Token"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/CharTokenizer.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isTokenChar(c)"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(Character.isWhitespace(c)) to return !Character.isWhitespace(c); in method protected isTokenChar(c char) : boolean from class org.apache.lucene.analysis.WhitespaceTokenizer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 99,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Character.isWhitespace(c))"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/NullTokenizer.java",
+		"startLine": 79,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public next() : Token"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/analysis/WhitespaceTokenizer.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return !Character.isWhitespace(c);\n"
+}, {
+		"filePath": "src/java/org/apache/lucene/analysis/WhitespaceTokenizer.java",
+		"startLine": 68,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "protected isTokenChar(c char) : boolean"
+}]
+}
+]
+}]
+}

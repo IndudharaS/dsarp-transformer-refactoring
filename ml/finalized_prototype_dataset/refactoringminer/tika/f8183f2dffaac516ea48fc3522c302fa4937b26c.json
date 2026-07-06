@@ -1,0 +1,1131 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "f8183f2dffaac516ea48fc3522c302fa4937b26c",
+	"url": "https://github.com/apache/tika/commit/f8183f2dffaac516ea48fc3522c302fa4937b26c",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.tika.config.LiusConfig renamed to org.apache.tika.config.TikaConfig",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/LiusConfig.java",
+		"startLine": 30,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.config.LiusConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/config/TikaConfig.java",
+		"startLine": 30,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.tika.config.TikaConfig"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.tika.exception.LiusException renamed to org.apache.tika.exception.TikaException",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/exception/LiusException.java",
+		"startLine": 19,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.exception.LiusException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/exception/TikaException.java",
+		"startLine": 19,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.tika.exception.TikaException"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.tika.log.LiusLogger renamed to org.apache.tika.log.TikaLogger",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/log/LiusLogger.java",
+		"startLine": 23,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.tika.log.LiusLogger"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/log/TikaLogger.java",
+		"startLine": 23,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.tika.log.TikaLogger"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type tc : LiusConfig to tc : TikaConfig in class org.apache.tika.TestParsers",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 24,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "tc : LiusConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/tika/TestParsers.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 24,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "tc : TikaConfig"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getParser(inputStream InputStream, config TikaConfig, mimeType String) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 61,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 61,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getParser(inputStream InputStream, config TikaConfig, mimeType String) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 48,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(inputStream InputStream, config LiusConfig, mimeType String) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 48,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getParser(inputStream InputStream, config TikaConfig, mimeType String) : Parser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getParser(documentUrl URL, config TikaConfig, mimeType String) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 53,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 99,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 53,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 99,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getParser(documentUrl URL, config TikaConfig, mimeType String) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 77,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(documentUrl URL, config LiusConfig, mimeType String) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 77,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getParser(documentUrl URL, config TikaConfig, mimeType String) : Parser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getParser(documentUrl URL, config TikaConfig) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 53,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 53,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getParser(documentUrl URL, config TikaConfig) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 103,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(documentUrl URL, config LiusConfig) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 103,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getParser(documentUrl URL, config TikaConfig) : Parser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getParser(documentFile File, config TikaConfig, mimeType String) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getParser(documentFile File, config TikaConfig, mimeType String) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 125,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(documentFile File, config LiusConfig, mimeType String) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 125,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getParser(documentFile File, config TikaConfig, mimeType String) : Parser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getParser(documentFile File, config TikaConfig) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getParser(documentFile File, config TikaConfig) : Parser from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 159,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(documentFile File, config LiusConfig) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 159,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getParser(documentFile File, config TikaConfig) : Parser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getStringContent(inputStream InputStream, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getStringContent(inputStream InputStream, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 56,
+		"endColumn": 69,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 180,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStringContent(inputStream InputStream, config LiusConfig, mimeType String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 56,
+		"endColumn": 69,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 180,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getStringContent(inputStream InputStream, config TikaConfig, mimeType String) : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getStringContent(documentUrl URL, config TikaConfig) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 60,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 60,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getStringContent(documentUrl URL, config TikaConfig) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 200,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStringContent(documentUrl URL, config LiusConfig) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 200,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getStringContent(documentUrl URL, config TikaConfig) : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getStringContent(documentUrl URL, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 60,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 60,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getStringContent(documentUrl URL, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 217,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStringContent(documentUrl URL, config LiusConfig, mimeType String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 217,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getStringContent(documentUrl URL, config TikaConfig, mimeType String) : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getStringContent(documentFile File, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 62,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 62,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getStringContent(documentFile File, config TikaConfig, mimeType String) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 236,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStringContent(documentFile File, config LiusConfig, mimeType String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 236,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getStringContent(documentFile File, config TikaConfig, mimeType String) : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : LiusConfig to config : TikaConfig in method public getStringContent(documentFile File, config TikaConfig) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 62,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 62,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getStringContent(documentFile File, config TikaConfig) : String from class org.apache.tika.utils.ParseUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 255,
+		"endLine": 270,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStringContent(documentFile File, config LiusConfig) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/utils/ParseUtils.java",
+		"startLine": 255,
+		"endLine": 270,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getStringContent(documentFile File, config TikaConfig) : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type tc : LiusConfig to tc : TikaConfig in method public getParser(inputStream InputStream, mimeType String, tc TikaConfig) : Parser from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 55,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tc : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 55,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "tc : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method public getParser(inputStream InputStream, mimeType String, tc TikaConfig) : Parser from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 38,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParser(inputStream InputStream, mimeType String, tc LiusConfig) : Parser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 38,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getParser(inputStream InputStream, mimeType String, tc TikaConfig) : Parser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type tc : LiusConfig to tc : TikaConfig in method private getParserConfig(mimeType String, tc TikaConfig) : ParserConfig from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 66,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tc : LiusConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 66,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "tc : TikaConfig"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LiusException to TikaException in method private getParserConfig(mimeType String, tc TikaConfig) : ParserConfig from class org.apache.tika.parser.ParserFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LiusException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 96,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getParserConfig(mimeType String, tc LiusConfig) : ParserConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "TikaException"
+}, {
+		"filePath": "src/main/java/org/apache/tika/parser/ParserFactory.java",
+		"startLine": 96,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "private getParserConfig(mimeType String, tc TikaConfig) : ParserConfig"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/maven.git",
+	"sha1": "03b7d6139d8aca205b12354413e9a11f84872965",
+	"url": "https://github.com/apache/maven/commit/03b7d6139d8aca205b12354413e9a11f84872965",
+	"refactorings": []
+}]
+}

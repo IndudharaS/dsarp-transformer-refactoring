@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "a8d1e675a2c18e67b534df31823214d8c917c07c",
+	"url": "https://github.com/apache/tika/commit/a8d1e675a2c18e67b534df31823214d8c917c07c",
+	"refactorings": [{
+	"type": "Extract Interface",
+	"description": "Extract Interface org.apache.tika.metadata.TikaMetadataKeys from classes [org.apache.tika.metadata.Metadata]",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/metadata/Metadata.java",
+		"startLine": 25,
+		"endLine": 218,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.tika.metadata.Metadata"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/metadata/Metadata.java",
+		"startLine": 25,
+		"endLine": 216,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.tika.metadata.Metadata"
+}, {
+		"filePath": "src/main/java/org/apache/tika/metadata/TikaMetadataKeys.java",
+		"startLine": 19,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.tika.metadata.TikaMetadataKeys"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public RESOURCE_NAME_KEY : String from class org.apache.tika.metadata.Metadata to public RESOURCE_NAME_KEY : String from class org.apache.tika.metadata.TikaMetadataKeys",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/metadata/Metadata.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 30,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RESOURCE_NAME_KEY : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/tika/metadata/TikaMetadataKeys.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public RESOURCE_NAME_KEY : String"
+}]
+}
+]
+}]
+}

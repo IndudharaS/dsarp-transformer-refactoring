@@ -1,0 +1,2385 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "160d9af7be83c6de8791c86dac799a1f4a055a09",
+	"url": "https://github.com/apache/camel/commit/160d9af7be83c6de8791c86dac799a1f4a055a09",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.ChoiceProcessor moved to org.apache.camel.processor.ChoiceProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/ChoiceProcessor.java",
+		"startLine": 23,
+		"endLine": 82,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.ChoiceProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/ChoiceProcessor.java",
+		"startLine": 26,
+		"endLine": 85,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.processor.ChoiceProcessor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.CompositeProcessor moved to org.apache.camel.processor.CompositeProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CompositeProcessor.java",
+		"startLine": 22,
+		"endLine": 60,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.CompositeProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/CompositeProcessor.java",
+		"startLine": 24,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.processor.CompositeProcessor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.FilterProcessor moved to org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/FilterProcessor.java",
+		"startLine": 20,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.FilterProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 23,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.processor.FilterProcessor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.InterceptorProcessor moved to org.apache.camel.processor.InterceptorProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/InterceptorProcessor.java",
+		"startLine": 20,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.InterceptorProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/InterceptorProcessor.java",
+		"startLine": 22,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.processor.InterceptorProcessor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.RecipientList moved to org.apache.camel.processor.RecipientList",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/RecipientList.java",
+		"startLine": 25,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.RecipientList"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/RecipientList.java",
+		"startLine": 30,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.processor.RecipientList"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.camel.SendProcessor moved to org.apache.camel.processor.SendProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/SendProcessor.java",
+		"startLine": 20,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.SendProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/SendProcessor.java",
+		"startLine": 23,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.camel.processor.SendProcessor"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.camel.CamelContainer renamed to org.apache.camel.CamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 28,
+		"endLine": 165,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContext.java",
+		"startLine": 28,
+		"endLine": 165,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.camel.CamelContext"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer<Exchange> to CamelContext<Exchange> in method public getContainer() : CamelContext<Exchange> from class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer<Exchange>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 93,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer<Exchange>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext<Exchange>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 93,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContainer() : CamelContext<Exchange>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getContainer() : CamelContainer renamed to public getContext() : CamelContext in class org.apache.camel.impl.DefaultEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getContext() : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method protected DefaultEndpoint(endpointUri String, container CamelContext) from class org.apache.camel.impl.DefaultEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 51,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 51,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer to CamelContext in method public getContext() : CamelContext from class org.apache.camel.impl.DefaultEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContext() : CamelContext"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute container : CamelContainer to context : CamelContext in class org.apache.camel.impl.DefaultEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "context : CamelContext"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type container : CamelContainer to context : CamelContext in class org.apache.camel.impl.DefaultEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "context : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveEndpoint(container CamelContext, uri String) : Endpoint<E> from class org.apache.camel.impl.DefaultEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 40,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.impl.DefaultEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 36,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultEndpointResolver.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public DefaultExchange(container CamelContext) from class org.apache.camel.impl.DefaultExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchange.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type container : CamelContainer to container : CamelContext in class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 36,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 34,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "container : CamelContext"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer to CamelContext in method public getContainer() : CamelContext from class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContainer() : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public ExchangeSupport(container CamelContext) from class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type container : CamelContainer to container : CamelContext in class org.apache.camel.pojo.PojoComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "container : CamelContext"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer to CamelContext in method public getContainer() : CamelContext from class org.apache.camel.pojo.PojoComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContainer() : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public setContainer(container CamelContext) : void from class org.apache.camel.pojo.PojoComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoComponent.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public PojoEndpoint(uri String, container CamelContext, component PojoComponent, pojo Object) from class org.apache.camel.pojo.PojoEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpoint.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 34,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpoint.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.pojo.PojoEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 36,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveEndpoint(container CamelContext, uri String) : PojoEndpoint from class org.apache.camel.pojo.PojoEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 38,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 6,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 38,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 6,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method private resolveQueueComponent(container CamelContext, componentName String) : PojoComponent from class org.apache.camel.pojo.PojoEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 46,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 6,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 46,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoEndpointResolver.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 6,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public PojoExchange(container CamelContext) from class org.apache.camel.pojo.PojoExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoExchange.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoExchange.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoExchange.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/pojo/PojoExchange.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type container : CamelContainer to container : CamelContext in class org.apache.camel.queue.QueueComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "container : CamelContext"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer to CamelContext in method public getContainer() : CamelContext from class org.apache.camel.queue.QueueComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContainer() : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public setContainer(container CamelContext) : void from class org.apache.camel.queue.QueueComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 30,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 30,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueComponent.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public QueueEndpoint(uri String, container CamelContext, queue BlockingQueue<E>) from class org.apache.camel.queue.QueueEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpoint.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 6,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 6,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveEndpoint(container CamelContext, uri String) : Endpoint<E> from class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 37,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 6,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 37,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 6,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method private resolveQueueComponent(container CamelContext, componentName String) : QueueComponent<E> from class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 50,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 86,
+		"endLine": 89,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 50,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 86,
+		"endLine": 89,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type container : CamelContainer<E> to container : CamelContext<E> in class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 29,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "container : CamelContext<E>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type c : CamelContainer<E> to c : CamelContext<E> in method public endpoint(uri String) : Endpoint<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "c : CamelContainer<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 26,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c : CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer<E> to CamelContext<E> in method public getContainer() : CamelContext<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 93,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 93,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContainer() : CamelContext<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer<E> to CamelContext<E> in method protected createContainer() : CamelContext<E> from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 15,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 141,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createContainer() : CamelContainer<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 15,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 141,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected createContainer() : CamelContext<E>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer<E> to container : CamelContext<E> in method protected RouteBuilder(container CamelContext<E>) from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 28,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer<E> to container : CamelContext<E> in method public setContainer(container CamelContext<E>) : void from class org.apache.camel.builder.RouteBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 30,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/RouteBuilder.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type container : CamelContainer to container : CamelContext in method public testJmsRoute() : void from class org.apache.camel.pojo.PojoRouteTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 51,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 50,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/pojo/PojoRouteTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type container : CamelContainer to container : CamelContext in method public testJmsRoute() : void from class org.apache.camel.queue.QueueRouteTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 48,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 48,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public StringExchange(container CamelContext) from class org.apache.camel.queue.QueueRouteTest.StringExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 31,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/queue/QueueRouteTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public DefaultJmsExchange(container CamelContext) from class org.apache.camel.jms.DefaultJmsExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 31,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public DefaultJmsExchange(container CamelContext, message Message) from class org.apache.camel.jms.DefaultJmsExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 31,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type container : CamelContainer to container : CamelContext in method public testJmsRoute() : void from class org.apache.camel.jms.JmsRouteTest",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 46,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 46,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/test/java/org/apache/camel/jms/JmsRouteTest.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public JmsEndpoint(endpointUri String, container CamelContext, destination String, template JmsOperations, listenerContainer AbstractMessageListenerContainer) from class org.apache.camel.jms.JmsEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 44,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 44,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpoint.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 36,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveEndpoint(container CamelContext, uri String) : JmsEndpoint from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 37,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 37,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method private resolveJmsComponent(container CamelContext, componentName String) : JmsComponent from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 43,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 81,
+		"endLine": 84,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 43,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 81,
+		"endLine": 84,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type container : CamelContainer to container : CamelContext in class org.apache.camel.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "container : CamelContext"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type CamelContainer to CamelContext in method public getContainer() : CamelContext from class org.apache.camel.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 139,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContainer() : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 139,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getContainer() : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public JmsComponent(container CamelContext) from class org.apache.camel.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public setContainer(container CamelContext) : void from class org.apache.camel.jms.JmsComponent",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 30,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 30,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsComponent.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public setContainer(container CamelContext) : void from class org.apache.camel.Component",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Component.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Component.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveComponent(container CamelContext, uri String) : Component from class org.apache.camel.EndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 39,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 39,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : CamelContainer to container : CamelContext in method public resolveEndpoint(container CamelContext, uri String) : Endpoint<E> from class org.apache.camel.EndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 40,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : CamelContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/EndpointResolver.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "container : CamelContext"
+}]
+}
+]
+}]
+}

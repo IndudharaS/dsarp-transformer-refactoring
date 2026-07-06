@@ -1,0 +1,135 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/lucene.git",
+	"sha1": "58bcd780a9a37d81dfcb6f4f17acccaddc03a438",
+	"url": "https://github.com/apache/lucene/commit/58bcd780a9a37d81dfcb6f4f17acccaddc03a438",
+	"refactorings": [{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter directory : Directory in method public open(directory Directory) : IndexReader from class org.apache.lucene.index.IndexReader",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/index/IndexReader.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 34,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "directory : Directory"
+}, {
+		"filePath": "src/java/org/apache/lucene/index/IndexReader.java",
+		"startLine": 91,
+		"endLine": 104,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public open(directory Directory) : IndexReader"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/index/IndexReader.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 34,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "directory : Directory"
+}, {
+		"filePath": "src/java/org/apache/lucene/index/IndexReader.java",
+		"startLine": 92,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public open(directory Directory) : IndexReader"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter create : boolean in method public IndexWriter(d Directory, a Analyzer, create boolean) from class org.apache.lucene.index.IndexWriter",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "create : boolean"
+}, {
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 111,
+		"endLine": 126,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IndexWriter(d Directory, a Analyzer, create boolean)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "create : boolean"
+}, {
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public IndexWriter(d Directory, a Analyzer, create boolean)"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable segmentsToDelete : Vector in method private mergeSegments(minSegment int, delete boolean) : void from class org.apache.lucene.index.IndexWriter",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 12,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "segmentsToDelete : Vector"
+}, {
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 281,
+		"endLine": 314,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private mergeSegments(minSegment int, delete boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "segmentsToDelete : Vector"
+}, {
+		"filePath": "src/java/org/apache/lucene/index/IndexWriter.java",
+		"startLine": 292,
+		"endLine": 330,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private mergeSegments(minSegment int, delete boolean) : void"
+}]
+}
+]
+}]
+}

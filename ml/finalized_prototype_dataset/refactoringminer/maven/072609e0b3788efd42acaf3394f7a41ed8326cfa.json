@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/maven.git",
+	"sha1": "072609e0b3788efd42acaf3394f7a41ed8326cfa",
+	"url": "https://github.com/apache/maven/commit/072609e0b3788efd42acaf3394f7a41ed8326cfa",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.maven.plugin.ResourcesPlugin renamed to org.apache.maven.plugin.ResourcesMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/main/java/org/apache/maven/plugin/ResourcesPlugin.java",
+		"startLine": 70,
+		"endLine": 255,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.maven.plugin.ResourcesPlugin"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-plugins/maven-resources-plugin/src/main/java/org/apache/maven/plugin/ResourcesMojo.java",
+		"startLine": 70,
+		"endLine": 250,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.maven.plugin.ResourcesMojo"
+}]
+}
+]
+}]
+}

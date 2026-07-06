@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/tika.git",
+	"sha1": "9a00212a62c01e658f7c780958582f970ae0a886",
+	"url": "https://github.com/apache/tika/commit/9a00212a62c01e658f7c780958582f970ae0a886",
+	"refactorings": []
+}]
+}

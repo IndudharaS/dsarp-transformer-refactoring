@@ -1,0 +1,1281 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel.git",
+	"sha1": "1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35",
+	"url": "https://github.com/apache/camel/commit/1623cf3b64c5ea2e6cb1208f0fbe9dd042527c35",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type factory : Callable<Component<E>> to factory : Callable<Component<E,? extends Endpoint<E>>> in method public getOrCreateComponent(componentName String, factory Callable<Component<E,? extends Endpoint<E>>>) : Component from class org.apache.camel.CamelContainer",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 62,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "factory : Callable<Component<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 6,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 62,
+		"endColumn": 115,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "factory : Callable<Component<E,? extends Endpoint<E>>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/CamelContainer.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 6,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type M to R in method public getResponse() : R from class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "M"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 48,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getResponse() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "R"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 48,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getResponse() : R"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type M to F in method public getFault() : F from class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "M"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFault() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "F"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getFault() : F"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type T to Object in method public getHeader(name String) : Object from class org.apache.camel.Exchange",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "T"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Exchange.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getHeader(name String) : Object"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type response : M to response : R in class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "response : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "response : R"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type fault : M to fault : F in class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 15,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "fault : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 15,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "fault : F"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type M to F in method public getFault() : F from class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 12,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "M"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFault() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 12,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "F"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getFault() : F"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type M to R in method public getResponse() : R from class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 12,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "M"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getResponse() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 12,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "R"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getResponse() : R"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type fault : M to fault : F in method public setFault(fault F) : void from class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fault : M"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fault : F"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type response : M to response : R in method public setResponse(response R) : void from class org.apache.camel.impl.ExchangeSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "response : M"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "response : R"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/ExchangeSupport.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getEndpointId(uri String) : String[] extracted from public resolveComponent(container CamelContainer, uri String) : Component in class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 44,
+		"endLine": 53,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public resolveComponent(container CamelContainer, uri String) : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 81,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getEndpointId(uri String) : String[]"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 44,
+		"endLine": 53,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public resolveComponent(container CamelContainer, uri String) : Component"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getEndpointId(uri)"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 32,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 79,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getEndpointId(uri String) : String[] extracted from public resolveEndpoint(container CamelContainer, uri String) : Endpoint<E> in class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 55,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public resolveEndpoint(container CamelContainer, uri String) : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 81,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getEndpointId(uri String) : String[]"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 55,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public resolveEndpoint(container CamelContainer, uri String) : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getEndpointId(uri)"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 32,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 79,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Component<E> to Component<E,? extends Endpoint<E>> in method public call() : Component<E,? extends Endpoint<E>> from class org.apache.camel.queue.QueueEndpointResolver.resolveQueueComponent.rc.getOrCreateComponent.new Callable<Component<E,? extends Endpoint<E>>>",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 11,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Component<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 76,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call() : Component<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 11,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Component<E,? extends Endpoint<E>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public call() : Component<E,? extends Endpoint<E>>"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable componentName : String to componentName : String in method private resolveQueueComponent(container CamelContainer, componentName String) : QueueComponent<E> from class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 10,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "componentName : String"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 76,
+		"endColumn": 96,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "componentName : String"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter splitURI : String[] in method private resolveQueueComponent(container CamelContainer, splitURI String[]) : QueueComponent<E> from class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 76,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "splitURI : String[]"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveQueueComponent(container CamelContainer, splitURI String[]) : QueueComponent<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private resolveQueueComponent(container CamelContainer, componentName String) : QueueComponent<E>"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method private resolveQueueComponent(container CamelContainer, componentName String) : QueueComponent<E> from class org.apache.camel.queue.QueueEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveQueueComponent(container CamelContainer, splitURI String[]) : QueueComponent<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/queue/QueueEndpointResolver.java",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "private resolveQueueComponent(container CamelContainer, componentName String) : QueueComponent<E>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type T to Object in method public getHeader(name String) : Object from class org.apache.camel.jms.DefaultJmsExchange",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 16,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "T"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 42,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHeader(name String) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/DefaultJmsExchange.java",
+		"startLine": 42,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getHeader(name String) : Object"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getEndpointId(uri String) : String[] extracted from public resolveComponent(container CamelContainer, uri String) : Component in class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 46,
+		"endLine": 53,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public resolveComponent(container CamelContainer, uri String) : Component"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 64,
+		"endLine": 77,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getEndpointId(uri String) : String[]"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 45,
+		"endLine": 52,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public resolveComponent(container CamelContainer, uri String) : Component"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getEndpointId(uri)"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 32,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 70,
+		"endLine": 75,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getEndpointId(uri String) : String[] extracted from public resolveEndpoint(container CamelContainer, uri String) : JmsEndpoint in class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 55,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public resolveEndpoint(container CamelContainer, uri String) : JmsEndpoint"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 64,
+		"endLine": 77,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getEndpointId(uri String) : String[]"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 54,
+		"endLine": 62,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public resolveEndpoint(container CamelContainer, uri String) : JmsEndpoint"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getEndpointId(uri)"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 32,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 70,
+		"endLine": 75,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable splitURI : String[] to id : String[] in method public resolveEndpoint(container CamelContainer, uri String) : JmsEndpoint from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 10,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "splitURI : String[]"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 6,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 10,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "id : String[]"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable componentName : String to componentName : String in method private resolveJmsComponent(container CamelContainer, componentName String) : JmsComponent from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 10,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "componentName : String"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 75,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "componentName : String"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 81,
+		"endLine": 84,
+		"startColumn": 6,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter splitURI : String[] in method private resolveJmsComponent(container CamelContainer, splitURI String[]) : JmsComponent from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 75,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "splitURI : String[]"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 66,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveJmsComponent(container CamelContainer, splitURI String[]) : JmsComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 79,
+		"endLine": 86,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private resolveJmsComponent(container CamelContainer, componentName String) : JmsComponent"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method private resolveJmsComponent(container CamelContainer, componentName String) : JmsComponent from class org.apache.camel.jms.JmsEndpointResolver",
+	"leftSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 66,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveJmsComponent(container CamelContainer, splitURI String[]) : JmsComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 2,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "camel-jms/src/main/java/org/apache/camel/jms/JmsEndpointResolver.java",
+		"startLine": 79,
+		"endLine": 86,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "private resolveJmsComponent(container CamelContainer, componentName String) : JmsComponent"
+}]
+}
+]
+}]
+}

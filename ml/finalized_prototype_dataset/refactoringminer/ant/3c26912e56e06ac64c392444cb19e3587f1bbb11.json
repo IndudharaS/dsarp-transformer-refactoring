@@ -1,0 +1,285 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "3c26912e56e06ac64c392444cb19e3587f1bbb11",
+	"url": "https://github.com/apache/ant/commit/3c26912e56e06ac64c392444cb19e3587f1bbb11",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter v : String to value : String in method public setValue(value String) : void from class org.apache.tools.ant.taskdefs.Property",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "v : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 2,
+		"endColumn": 10,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter v : String to file : String in method public setFile(file String) : void from class org.apache.tools.ant.taskdefs.Property",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 25,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "v : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 2,
+		"endColumn": 9,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "file : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter v : String to resource : String in method public setResource(resource String) : void from class org.apache.tools.ant.taskdefs.Property",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "v : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 13,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 29,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "resource : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable value1 : String to v : String in method private addProperties(props Properties) : void from class org.apache.tools.ant.taskdefs.Property",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "value1 : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 6,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 6,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 20,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "v : String"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public execute() : void renamed to public init() : void in class org.apache.tools.ant.taskdefs.Tstamp",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 70,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public execute() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 70,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public init() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable ex : Exception to e : Exception in method public init() : void from class org.apache.tools.ant.taskdefs.Tstamp",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 18,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ex : Exception"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Tstamp.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public execute() : void renamed to public init() : void in class org.apache.tools.ant.taskdefs.Property",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 71,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public execute() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Property.java",
+		"startLine": 89,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public init() : void"
+}]
+}
+]
+}]
+}
