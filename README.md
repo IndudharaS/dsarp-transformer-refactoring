@@ -1,5 +1,36 @@
 # DSARP - Transformer-Based Software Architecture Refactoring
 
+## Stage 3 CodeBERT Workflow (Google Colab)
+
+Stage 3 uses `microsoft/codebert-base` in Google Colab. Until its exported
+model is installed, FastAPI safely keeps using the Stage 2 rule classifier.
+The Apache records in `ml/finalized_prototype_dataset/` are included as weakly
+labelled auxiliary data, with provenance and mappings recorded in the report.
+
+Build the combined `text,label` CSV from Windows Git Bash:
+
+```bash
+python ml/scripts/prepare_codebert_dataset.py \
+  --dsarp-csv backend/reports/stage3-original.csv \
+  --mined-csv ml/finalized_prototype_dataset/dsarp_outputs/architecture_smell_refactoring_dataset.csv \
+  --output backend/reports/stage3-codebert.csv
+```
+
+Repeat `--dsarp-csv` for additional project exports. Review the generated
+`.report.json`: each intended label should have at least 30 examples and the
+largest class should ideally be no more than three times the smallest.
+
+1. Open `ml/Stage_3_Transformer_Classifier_Tika_Prototype.ipynb` in Colab.
+2. Select **Runtime > Change runtime type > T4 GPU**.
+3. Run all cells and upload `backend/reports/stage3-codebert.csv`.
+4. Extract `saved_transformer_classifier.zip` into
+   `backend/app/ml/saved_transformer_classifier/`.
+5. Restart FastAPI. New analyses use `codebert-refactoring-classifier`; load
+   failures fall back to `rule-classifier-baseline`.
+
+Do not use prototype metrics as final research results while quality warnings
+remain. The local saved-model directory is intentionally ignored by Git.
+
 Stage 2 processes uploaded DSARP CSV files without an HPC LLM. It builds smell
 objects, creates rule-based recommendations and classifier predictions, ranks
 the recommendations, and exposes statistics APIs.

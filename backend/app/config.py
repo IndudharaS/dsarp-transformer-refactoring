@@ -32,6 +32,13 @@ class Settings(BaseModel):
         "HPC_LLM_MODEL",
         "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
     )
+    transformer_model_dir: str = os.getenv(
+        "TRANSFORMER_MODEL_DIR",
+        "app/ml/saved_transformer_classifier",
+    )
+    transformer_local_files_only: bool = os.getenv(
+        "TRANSFORMER_LOCAL_FILES_ONLY", "true"
+    ).lower() in {"1", "true", "yes"}
     cors_origins: List[str] = ["http://localhost:3000"]
 
     @property
@@ -48,6 +55,11 @@ class Settings(BaseModel):
     def report_path(self) -> Path:
         """Filesystem path for generated report output."""
         return BASE_DIR / self.report_dir
+
+    @property
+    def transformer_model_path(self) -> Path:
+        """Filesystem path containing the Colab-exported classifier."""
+        return BASE_DIR / self.transformer_model_dir
 
 
 @lru_cache

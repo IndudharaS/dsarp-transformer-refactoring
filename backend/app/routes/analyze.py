@@ -13,7 +13,11 @@ from pymongo.errors import PyMongoError
 from app.db.mongo import get_database, mongo_error_message
 from app.pipeline.classifier_client import get_classifier
 from app.pipeline.data_loader import load_analysis_data
-from app.pipeline.feature_builder import build_smell_objects, build_training_feature
+from app.pipeline.feature_builder import (
+    build_smell_objects,
+    build_training_feature,
+    build_training_text,
+)
 from app.pipeline.ranker import rank_recommendations
 from app.pipeline.rule_recommender import build_rule_recommendation
 from app.pipeline.validator import validate_analysis_data
@@ -144,7 +148,9 @@ async def analyze_run(run_id: str) -> dict[str, str | int]:
         training_features: list[dict[str, Any]] = []
 
         for smell in smells:
-            result = classifier.predict(str(smell["smellType"]))
+            result = classifier.predict(
+                str(smell["smellType"]), build_training_text(smell)
+            )
             prediction = build_prediction(
                 run_id,
                 smell,

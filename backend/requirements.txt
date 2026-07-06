@@ -10,3 +10,7 @@ python-dotenv
 openpyxl
 jinja2
 openai
+transformers
+torch
+joblib
+pytest
