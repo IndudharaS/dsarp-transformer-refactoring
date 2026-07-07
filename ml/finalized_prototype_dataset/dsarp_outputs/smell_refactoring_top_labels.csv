@@ -1,0 +1,21 @@
+architecture_smell,rank,refactoring_label,severity_weight
+Cyclic Dependency,1,Change Return Type,0.166667
+Cyclic Dependency,2,Inline Variable,0.166667
+Cyclic Dependency,3,Remove Parameter,0.166667
+Cyclic Dependency,4,Rename Variable,0.166667
+Cyclic Dependency,5,Split Parameter,0.166667
+Excessive Package Coupling,1,Move And Rename Class,0.088106
+Excessive Package Coupling,2,Move Class,0.0837
+Excessive Package Coupling,3,Rename Variable,0.0837
+Excessive Package Coupling,4,Inline Variable,0.07489
+Excessive Package Coupling,5,Change Return Type,0.070485
+Hub-like Dependency,1,Rename Variable,0.1
+Hub-like Dependency,2,Inline Variable,0.1
+Hub-like Dependency,3,Replace Attribute With Variable,0.1
+Hub-like Dependency,4,Remove Parameter,0.066667
+Hub-like Dependency,5,Change Return Type,0.066667
+Large Component,1,Change Attribute Type,0.083333
+Large Component,2,Move Class,0.083333
+Large Component,3,Rename Attribute,0.083333
+Large Component,4,Change Attribute Access Modifier,0.041667
+Large Component,5,Change Class Access Modifier,0.041667
